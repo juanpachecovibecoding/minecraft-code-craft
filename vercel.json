@@ -1,6 +1,5 @@
 ﻿{
-  "version": 2,
-  "public": true,
+  "outputDirectory": "app/mc/prismarine-web-client/dist",
   "cleanUrls": true,
   "headers": [
     {
