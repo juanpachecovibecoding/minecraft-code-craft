@@ -1,6 +1,6 @@
 ﻿{
   "framework": null,
-  "outputDirectory": "app/mc/prismarine-web-client/dist",
+  "outputDirectory": "dist",
   "cleanUrls": true,
   "headers": [
     {
