@@ -1,0 +1,78 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="procedures_defnoreturn" id="3!9GBu(Z@ax!g$_]f~NI" x="0" y="0">
+    <field name="NAME">sphere</field>
+    <comment pinned="false" h="80" w="160">Descrivi questa funzione...</comment>
+    <statement name="STACK">
+      <block type="controls_repeat_ext" id="J$ga2(mxi:/Q@gX94Grc">
+        <value name="TIMES">
+          <shadow type="math_number" id="^-XbX83@1Ar!7Fn[_~.*">
+            <field name="NUM">180</field>
+          </shadow>
+        </value>
+        <statement name="DO">
+          <block type="minecraft_ellipse" id="ScP32}IzmDtG+|lihaM`">
+            <field name="fill">false</field>
+            <value name="width">
+              <block type="math_number" id="czVI!Xd-|;+La@HaCO*?">
+                <field name="NUM">10</field>
+              </block>
+            </value>
+            <value name="height">
+              <block type="math_number" id="eitTPqoO=Vf]VtgCRLhs">
+                <field name="NUM">10</field>
+              </block>
+            </value>
+            <value name="NAME">
+              <block type="minecraft_materialbockOnlyOne" id="!_:OAS{:|/[Nd5o=nV~x">
+                <field name="NAME">b.yellow_glazed_terracotta</field>
+                <value name="singleblock">
+                  <block type="minecraft_materialbockOnlyOne" id="p/2qf`dG1rOREW5WyI3L">
+                    <field name="NAME">b.magenta_glazed_terracotta</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="minecraft_set_elevation_relative" id="NIpqWnnYr)yZ;i-3$4j$">
+                <value name="angle">
+                  <block type="math_number" id="U9C.wh6srXW)zwj4D/H4">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <next>
+          <block type="minecraft_ellipse" id="SR7J]j?/O%bI$f_:P3hB">
+            <field name="fill">false</field>
+            <value name="width">
+              <block type="math_number" id="rer^4td$HPd#?}GW?_xm">
+                <field name="NUM">4</field>
+              </block>
+            </value>
+            <value name="height">
+              <block type="math_number" id="yU3$,:)@I;[$ay|4jrq`">
+                <field name="NUM">4</field>
+              </block>
+            </value>
+            <value name="NAME">
+              <block type="minecraft_entity" id="du28m~xw(QBefkay,(S6">
+                <field name="NAME">e.bat</field>
+              </block>
+            </value>
+            <next>
+              <block type="minecraft_block" id="l+J,BWhl6e5j;On-kvBV">
+                <value name="NAME">
+                  <block type="minecraft_materialbockOnlyOne" id="Q}*0l/Y6+~+lv2uiyLa}">
+                    <field name="NAME">b.glowstone</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>

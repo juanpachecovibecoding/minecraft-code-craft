@@ -1,0 +1,582 @@
+Compiled from "WebServerMC.java"
+class org.lauro.blocklyMc.network.WebServerMC$MyHandler implements com.sun.net.httpserver.HttpHandler {
+  private static final java.lang.String ERROR = "ERROR:";
+
+  private static final java.lang.String WARN = "WARN:";
+
+  private static final java.lang.String OK = "OK:";
+
+  private static final java.lang.String EDITOR_MINECRAFT_INDEX_HTML = "/editor/minecraft/index.html";
+
+  private static final java.lang.String EXECODE = "\"EXECODE\"";
+
+  private static final java.lang.String XMLCODE = "\"XMLCODE\"";
+
+  private static final java.lang.String PLAYER_NAME_PARAM = "\"Playername\"";
+
+  private static final java.lang.String LANGUAGE_SELECTION_PARAM = "\"langsel\"";
+
+  private static final java.lang.String FTP_LINK_PARAM = "\"FtpLink\"";
+
+  private static final java.lang.String PARAM_END_TAG = "---";
+
+  private static final int MAX_PROGRAM_LENGTH = 1000000;
+
+  org.lauro.blocklyMc.network.WebServerMC$MyHandler();
+    Code:
+       0: aload_0
+       1: invokespecial #45                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  public void handle(com.sun.net.httpserver.HttpExchange) throws java.io.IOException;
+    Code:
+       0: aload_1
+       1: invokevirtual #56                 // Method com/sun/net/httpserver/HttpExchange.getRequestURI:()Ljava/net/URI;
+       4: astore_2
+       5: aload_2
+       6: invokevirtual #62                 // Method java/net/URI.toString:()Ljava/lang/String;
+       9: astore_3
+      10: ldc           #68                 // String /EXE
+      12: aload_3
+      13: invokevirtual #70                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      16: ifeq          27
+      19: aload_0
+      20: aload_1
+      21: invokespecial #76                 // Method handleExecute:(Lcom/sun/net/httpserver/HttpExchange;)V
+      24: goto          76
+      27: ldc           #79                 // String /LOG
+      29: aload_3
+      30: invokevirtual #70                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      33: ifeq          44
+      36: aload_0
+      37: aload_1
+      38: invokespecial #81                 // Method handleLogRequest:(Lcom/sun/net/httpserver/HttpExchange;)V
+      41: goto          76
+      44: aload_3
+      45: astore        4
+      47: aload_3
+      48: bipush        63
+      50: invokevirtual #84                 // Method java/lang/String.indexOf:(I)I
+      53: istore        5
+      55: iload         5
+      57: iflt          69
+      60: aload_3
+      61: iconst_0
+      62: iload         5
+      64: invokevirtual #88                 // Method java/lang/String.substring:(II)Ljava/lang/String;
+      67: astore        4
+      69: aload_0
+      70: aload_1
+      71: aload         4
+      73: invokespecial #92                 // Method readWebSiteFromLocal:(Lcom/sun/net/httpserver/HttpExchange;Ljava/lang/String;)V
+      76: return
+
+  private void handleLogRequest(com.sun.net.httpserver.HttpExchange) throws java.io.IOException;
+    Code:
+       0: ldc           #104                // String
+       2: astore_2
+       3: ldc           #106                // String post
+       5: aload_1
+       6: invokevirtual #108                // Method com/sun/net/httpserver/HttpExchange.getRequestMethod:()Ljava/lang/String;
+       9: invokevirtual #111                // Method java/lang/String.equalsIgnoreCase:(Ljava/lang/String;)Z
+      12: ifeq          90
+      15: aload_0
+      16: aload_1
+      17: invokevirtual #115                // Method parseCall:(Lcom/sun/net/httpserver/HttpExchange;)Ljava/lang/String;
+      20: astore_3
+      21: aload_3
+      22: ldc           #28                 // String \"Playername\"
+      24: invokevirtual #119                // Method java/lang/String.indexOf:(Ljava/lang/String;)I
+      27: istore        4
+      29: iload         4
+      31: iconst_m1
+      32: if_icmpne     41
+      35: ldc           #122                // String ERROR: Missing player name
+      37: astore_2
+      38: goto          93
+      41: aload_3
+      42: iload         4
+      44: ldc           #28                 // String \"Playername\"
+      46: invokevirtual #124                // Method java/lang/String.length:()I
+      49: iadd
+      50: aload_3
+      51: ldc           #37                 // String ---
+      53: iload         4
+      55: invokevirtual #128                // Method java/lang/String.indexOf:(Ljava/lang/String;I)I
+      58: invokevirtual #88                 // Method java/lang/String.substring:(II)Ljava/lang/String;
+      61: invokevirtual #131                // Method java/lang/String.trim:()Ljava/lang/String;
+      64: astore        5
+      66: ldc           #134                // String ./plugins/visualmodder/logs
+      68: aload         5
+      70: invokestatic  #136                // Method org/lauro/blocklyMc/utils/LogHandler.readLogFile:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      73: astore_2
+      74: goto          93
+      77: astore_3
+      78: aload_3
+      79: invokevirtual #142                // Method java/lang/Exception.printStackTrace:()V
+      82: aload_3
+      83: invokevirtual #147                // Method java/lang/Exception.getMessage:()Ljava/lang/String;
+      86: astore_2
+      87: goto          93
+      90: ldc           #150                // String invalid call
+      92: astore_2
+      93: aload_0
+      94: aload_1
+      95: aload_2
+      96: invokespecial #152                // Method respondWithMessage:(Lcom/sun/net/httpserver/HttpExchange;Ljava/lang/String;)V
+      99: return
+    Exception table:
+       from    to  target type
+          15    74    77   Class java/lang/Exception
+
+  private void handleExecute(com.sun.net.httpserver.HttpExchange) throws java.io.IOException;
+    Code:
+       0: ldc           #161                // String This is the response
+       2: astore_2
+       3: ldc           #106                // String post
+       5: aload_1
+       6: invokevirtual #108                // Method com/sun/net/httpserver/HttpExchange.getRequestMethod:()Ljava/lang/String;
+       9: invokevirtual #111                // Method java/lang/String.equalsIgnoreCase:(Ljava/lang/String;)Z
+      12: ifeq          337
+      15: aload_0
+      16: aload_1
+      17: invokevirtual #115                // Method parseCall:(Lcom/sun/net/httpserver/HttpExchange;)Ljava/lang/String;
+      20: astore_3
+      21: aload_0
+      22: aload_3
+      23: invokevirtual #163                // Method readPlayerLanguage:(Ljava/lang/String;)Ljava/lang/String;
+      26: astore        4
+      28: aload_0
+      29: aload_3
+      30: invokevirtual #167                // Method readFtpLink:(Ljava/lang/String;)Ljava/lang/String;
+      33: astore        5
+      35: aload_3
+      36: ldc           #28                 // String \"Playername\"
+      38: invokevirtual #119                // Method java/lang/String.indexOf:(Ljava/lang/String;)I
+      41: istore        6
+      43: iload         6
+      45: iconst_m1
+      46: if_icmpne     55
+      49: ldc           #122                // String ERROR: Missing player name
+      51: astore_2
+      52: goto          340
+      55: aload_3
+      56: invokevirtual #124                // Method java/lang/String.length:()I
+      59: ldc           #41                 // int 1000000
+      61: if_icmple     70
+      64: ldc           #170                // String ERROR: Program too long. Max is 1000000 chars
+      66: astore_2
+      67: goto          340
+      70: aload_3
+      71: ldc           #22                 // String \"EXECODE\"
+      73: invokevirtual #119                // Method java/lang/String.indexOf:(Ljava/lang/String;)I
+      76: istore        7
+      78: aload_3
+      79: ldc           #25                 // String \"XMLCODE\"
+      81: invokevirtual #119                // Method java/lang/String.indexOf:(Ljava/lang/String;)I
+      84: istore        8
+      86: iload         7
+      88: iconst_m1
+      89: if_icmpeq     318
+      92: iload         8
+      94: iconst_m1
+      95: if_icmpeq     318
+      98: aload_3
+      99: iload         7
+     101: ldc           #22                 // String \"EXECODE\"
+     103: invokevirtual #124                // Method java/lang/String.length:()I
+     106: iadd
+     107: aload_3
+     108: ldc           #37                 // String ---
+     110: iload         7
+     112: invokevirtual #128                // Method java/lang/String.indexOf:(Ljava/lang/String;I)I
+     115: invokevirtual #88                 // Method java/lang/String.substring:(II)Ljava/lang/String;
+     118: astore        9
+     120: aload_3
+     121: iload         8
+     123: ldc           #25                 // String \"XMLCODE\"
+     125: invokevirtual #124                // Method java/lang/String.length:()I
+     128: iadd
+     129: aload_3
+     130: ldc           #37                 // String ---
+     132: iload         8
+     134: invokevirtual #128                // Method java/lang/String.indexOf:(Ljava/lang/String;I)I
+     137: invokevirtual #88                 // Method java/lang/String.substring:(II)Ljava/lang/String;
+     140: astore        10
+     142: aload_3
+     143: iload         6
+     145: ldc           #28                 // String \"Playername\"
+     147: invokevirtual #124                // Method java/lang/String.length:()I
+     150: iadd
+     151: aload_3
+     152: ldc           #37                 // String ---
+     154: iload         6
+     156: invokevirtual #128                // Method java/lang/String.indexOf:(Ljava/lang/String;I)I
+     159: invokevirtual #88                 // Method java/lang/String.substring:(II)Ljava/lang/String;
+     162: invokevirtual #131                // Method java/lang/String.trim:()Ljava/lang/String;
+     165: astore        11
+     167: invokestatic  #172                // Method org/lauro/blocklyMc/network/WebServerMC.access$0:()Ljava/util/logging/Logger;
+     170: getstatic     #178                // Field java/util/logging/Level.FINE:Ljava/util/logging/Level;
+     173: new           #184                // class java/lang/StringBuilder
+     176: dup
+     177: ldc           #186                // String Successfully stored command for player:
+     179: invokespecial #188                // Method java/lang/StringBuilder."<init>":(Ljava/lang/String;)V
+     182: aload         11
+     184: invokevirtual #191                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     187: ldc           #195                // String  with ip
+     189: invokevirtual #191                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     192: aload_1
+     193: invokevirtual #197                // Method com/sun/net/httpserver/HttpExchange.getRemoteAddress:()Ljava/net/InetSocketAddress;
+     196: invokevirtual #201                // Method java/net/InetSocketAddress.getAddress:()Ljava/net/InetAddress;
+     199: invokevirtual #207                // Method java/net/InetAddress.getHostName:()Ljava/lang/String;
+     202: invokevirtual #191                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     205: ldc           #212                // String  and port
+     207: invokevirtual #191                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     210: aload_1
+     211: invokevirtual #197                // Method com/sun/net/httpserver/HttpExchange.getRemoteAddress:()Ljava/net/InetSocketAddress;
+     214: invokevirtual #214                // Method java/net/InetSocketAddress.getPort:()I
+     217: invokevirtual #217                // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+     220: ldc           #220                // String  LANG=
+     222: invokevirtual #191                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     225: aload         4
+     227: invokevirtual #191                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     230: invokevirtual #222                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+     233: invokevirtual #223                // Method java/util/logging/Logger.log:(Ljava/util/logging/Level;Ljava/lang/String;)V
+     236: aload         11
+     238: aload         9
+     240: aload         5
+     242: invokestatic  #229                // Method org/lauro/blocklyMc/network/WebServerMC.storeCommandCode:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+     245: istore        12
+     247: aload         11
+     249: aload         10
+     251: invokestatic  #233                // Method org/lauro/blocklyMc/network/WebServerMC.storeXMLcode:(Ljava/lang/String;Ljava/lang/String;)V
+     254: iload         12
+     256: ifeq          298
+     259: aload         5
+     261: invokestatic  #237                // Method org/lauro/blocklyMc/network/WebServerMC.isForRemoteFtpUpload:(Ljava/lang/String;)Z
+     264: ifeq          273
+     267: ldc           #240                // String OK: Commands are uploaded to the remote server
+     269: astore_2
+     270: goto          340
+     273: aload_0
+     274: aload         11
+     276: invokevirtual #242                // Method isPlayerOnline:(Ljava/lang/String;)Z
+     279: istore        13
+     281: iload         13
+     283: ifeq          292
+     286: ldc           #245                // String OK: Player is online
+     288: astore_2
+     289: goto          340
+     292: ldc           #247                // String WARN: Player not online
+     294: astore_2
+     295: goto          340
+     298: aload         5
+     300: invokestatic  #237                // Method org/lauro/blocklyMc/network/WebServerMC.isForRemoteFtpUpload:(Ljava/lang/String;)Z
+     303: ifeq          312
+     306: ldc           #249                // String ERROR: Could not upload commands to the remote server
+     308: astore_2
+     309: goto          340
+     312: ldc           #251                // String ERROR: Could not store the command file
+     314: astore_2
+     315: goto          340
+     318: ldc           #253                // String ERROR: Invalid call parameters
+     320: astore_2
+     321: goto          340
+     324: astore_3
+     325: aload_3
+     326: invokevirtual #142                // Method java/lang/Exception.printStackTrace:()V
+     329: aload_3
+     330: invokevirtual #147                // Method java/lang/Exception.getMessage:()Ljava/lang/String;
+     333: astore_2
+     334: goto          340
+     337: ldc           #150                // String invalid call
+     339: astore_2
+     340: invokestatic  #172                // Method org/lauro/blocklyMc/network/WebServerMC.access$0:()Ljava/util/logging/Logger;
+     343: getstatic     #178                // Field java/util/logging/Level.FINE:Ljava/util/logging/Level;
+     346: new           #184                // class java/lang/StringBuilder
+     349: dup
+     350: ldc           #255                // String response to http call is:
+     352: invokespecial #188                // Method java/lang/StringBuilder."<init>":(Ljava/lang/String;)V
+     355: aload_2
+     356: invokevirtual #191                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     359: invokevirtual #222                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+     362: invokevirtual #223                // Method java/util/logging/Logger.log:(Ljava/util/logging/Level;Ljava/lang/String;)V
+     365: aload_0
+     366: aload_1
+     367: aload_2
+     368: invokespecial #152                // Method respondWithMessage:(Lcom/sun/net/httpserver/HttpExchange;Ljava/lang/String;)V
+     371: return
+    Exception table:
+       from    to  target type
+          15   321   324   Class java/lang/Exception
+
+  protected boolean isPlayerOnline(java.lang.String);
+    Code:
+       0: invokestatic  #267                // Method org/bukkit/Bukkit.getOnlinePlayers:()Ljava/util/Collection;
+       3: astore_2
+       4: iconst_0
+       5: istore_3
+       6: aload_2
+       7: invokeinterface #273,  1          // InterfaceMethod java/util/Collection.iterator:()Ljava/util/Iterator;
+      12: astore        5
+      14: goto          48
+      17: aload         5
+      19: invokeinterface #279,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      24: checkcast     #285                // class org/bukkit/entity/Player
+      27: astore        4
+      29: aload         4
+      31: invokeinterface #287,  1          // InterfaceMethod org/bukkit/entity/Player.getName:()Ljava/lang/String;
+      36: aload_1
+      37: invokevirtual #70                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      40: ifeq          48
+      43: iconst_1
+      44: istore_3
+      45: goto          58
+      48: aload         5
+      50: invokeinterface #290,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      55: ifne          17
+      58: iload_3
+      59: ireturn
+
+  protected java.lang.String parseCall(com.sun.net.httpserver.HttpExchange) throws java.io.UnsupportedEncodingException, java.io.IOException;
+    Code:
+       0: new           #302                // class java/io/InputStreamReader
+       3: dup
+       4: aload_1
+       5: invokevirtual #304                // Method com/sun/net/httpserver/HttpExchange.getRequestBody:()Ljava/io/InputStream;
+       8: ldc_w         #308                // String utf-8
+      11: invokespecial #310                // Method java/io/InputStreamReader."<init>":(Ljava/io/InputStream;Ljava/lang/String;)V
+      14: astore_2
+      15: new           #313                // class java/io/BufferedReader
+      18: dup
+      19: aload_2
+      20: invokespecial #315                // Method java/io/BufferedReader."<init>":(Ljava/io/Reader;)V
+      23: astore_3
+      24: new           #318                // class java/lang/StringBuffer
+      27: dup
+      28: invokespecial #320                // Method java/lang/StringBuffer."<init>":()V
+      31: astore        4
+      33: aload_3
+      34: invokevirtual #321                // Method java/io/BufferedReader.readLine:()Ljava/lang/String;
+      37: astore        5
+      39: goto          65
+      42: aload         4
+      44: aload         5
+      46: invokevirtual #324                // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+      49: pop
+      50: aload         4
+      52: ldc_w         #327                // String \n
+      55: invokevirtual #324                // Method java/lang/StringBuffer.append:(Ljava/lang/String;)Ljava/lang/StringBuffer;
+      58: pop
+      59: aload_3
+      60: invokevirtual #321                // Method java/io/BufferedReader.readLine:()Ljava/lang/String;
+      63: astore        5
+      65: aload         5
+      67: ifnonnull     42
+      70: aload         4
+      72: invokevirtual #329                // Method java/lang/StringBuffer.toString:()Ljava/lang/String;
+      75: astore        6
+      77: aload         6
+      79: areturn
+
+  protected java.lang.String readFtpLink(java.lang.String);
+    Code:
+       0: aload_1
+       1: ldc           #34                 // String \"FtpLink\"
+       3: invokevirtual #119                // Method java/lang/String.indexOf:(Ljava/lang/String;)I
+       6: istore_2
+       7: aconst_null
+       8: astore_3
+       9: iload_2
+      10: iconst_m1
+      11: if_icmple     36
+      14: aload_1
+      15: iload_2
+      16: ldc           #34                 // String \"FtpLink\"
+      18: invokevirtual #124                // Method java/lang/String.length:()I
+      21: iadd
+      22: aload_1
+      23: ldc           #37                 // String ---
+      25: iload_2
+      26: invokevirtual #128                // Method java/lang/String.indexOf:(Ljava/lang/String;I)I
+      29: invokevirtual #88                 // Method java/lang/String.substring:(II)Ljava/lang/String;
+      32: invokevirtual #131                // Method java/lang/String.trim:()Ljava/lang/String;
+      35: astore_3
+      36: aload_3
+      37: areturn
+
+  protected java.lang.String readPlayerLanguage(java.lang.String);
+    Code:
+       0: aload_1
+       1: ldc           #31                 // String \"langsel\"
+       3: invokevirtual #119                // Method java/lang/String.indexOf:(Ljava/lang/String;)I
+       6: istore_2
+       7: ldc_w         #338                // String unknown
+      10: astore_3
+      11: iload_2
+      12: iconst_m1
+      13: if_icmple     38
+      16: aload_1
+      17: iload_2
+      18: ldc           #31                 // String \"langsel\"
+      20: invokevirtual #124                // Method java/lang/String.length:()I
+      23: iadd
+      24: aload_1
+      25: ldc           #37                 // String ---
+      27: iload_2
+      28: invokevirtual #128                // Method java/lang/String.indexOf:(Ljava/lang/String;I)I
+      31: invokevirtual #88                 // Method java/lang/String.substring:(II)Ljava/lang/String;
+      34: invokevirtual #131                // Method java/lang/String.trim:()Ljava/lang/String;
+      37: astore_3
+      38: aload_3
+      39: areturn
+
+  private void readWebSiteFromLocal(com.sun.net.httpserver.HttpExchange, java.lang.String);
+    Code:
+       0: aconst_null
+       1: astore_3
+       2: new           #341                // class java/io/File
+       5: dup
+       6: aload_2
+       7: invokespecial #343                // Method java/io/File."<init>":(Ljava/lang/String;)V
+      10: astore        4
+      12: aload         4
+      14: invokevirtual #344                // Method java/io/File.toPath:()Ljava/nio/file/Path;
+      17: astore        5
+      19: aload_2
+      20: ldc_w         #348                // String .js
+      23: invokevirtual #350                // Method java/lang/String.endsWith:(Ljava/lang/String;)Z
+      26: pop
+      27: aload         5
+      29: invokestatic  #353                // Method java/nio/file/Files.probeContentType:(Ljava/nio/file/Path;)Ljava/lang/String;
+      32: astore_3
+      33: aload_3
+      34: ifnonnull     79
+      37: aload_2
+      38: ldc_w         #348                // String .js
+      41: invokevirtual #350                // Method java/lang/String.endsWith:(Ljava/lang/String;)Z
+      44: ifeq          79
+      47: ldc_w         #359                // String text/javascript
+      50: astore_3
+      51: goto          79
+      54: astore        5
+      56: invokestatic  #172                // Method org/lauro/blocklyMc/network/WebServerMC.access$0:()Ljava/util/logging/Logger;
+      59: new           #184                // class java/lang/StringBuilder
+      62: dup
+      63: ldc_w         #361                // String File type not detected for
+      66: invokespecial #188                // Method java/lang/StringBuilder."<init>":(Ljava/lang/String;)V
+      69: aload_2
+      70: invokevirtual #191                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      73: invokevirtual #222                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      76: invokevirtual #363                // Method java/util/logging/Logger.warning:(Ljava/lang/String;)V
+      79: aload_0
+      80: aload_1
+      81: aload_3
+      82: invokespecial #366                // Method setResponseHeaders:(Lcom/sun/net/httpserver/HttpExchange;Ljava/lang/String;)V
+      85: aload_1
+      86: invokevirtual #369                // Method com/sun/net/httpserver/HttpExchange.getResponseBody:()Ljava/io/OutputStream;
+      89: astore        5
+      91: aload_2
+      92: ldc           #19                 // String /editor/minecraft/index.html
+      94: invokevirtual #373                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+      97: ifeq          150
+     100: invokestatic  #172                // Method org/lauro/blocklyMc/network/WebServerMC.access$0:()Ljava/util/logging/Logger;
+     103: getstatic     #376                // Field java/util/logging/Level.INFO:Ljava/util/logging/Level;
+     106: new           #184                // class java/lang/StringBuilder
+     109: dup
+     110: ldc_w         #379                // String loaded index page for ip
+     113: invokespecial #188                // Method java/lang/StringBuilder."<init>":(Ljava/lang/String;)V
+     116: aload_1
+     117: invokevirtual #197                // Method com/sun/net/httpserver/HttpExchange.getRemoteAddress:()Ljava/net/InetSocketAddress;
+     120: invokevirtual #201                // Method java/net/InetSocketAddress.getAddress:()Ljava/net/InetAddress;
+     123: invokevirtual #207                // Method java/net/InetAddress.getHostName:()Ljava/lang/String;
+     126: invokevirtual #191                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     129: ldc           #212                // String  and port
+     131: invokevirtual #191                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     134: aload_1
+     135: invokevirtual #197                // Method com/sun/net/httpserver/HttpExchange.getRemoteAddress:()Ljava/net/InetSocketAddress;
+     138: invokevirtual #214                // Method java/net/InetSocketAddress.getPort:()I
+     141: invokevirtual #217                // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+     144: invokevirtual #222                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+     147: invokevirtual #223                // Method java/util/logging/Logger.log:(Ljava/util/logging/Level;Ljava/lang/String;)V
+     150: aload_0
+     151: invokevirtual #381                // Method java/lang/Object.getClass:()Ljava/lang/Class;
+     154: aload_2
+     155: invokevirtual #385                // Method java/lang/Class.getResourceAsStream:(Ljava/lang/String;)Ljava/io/InputStream;
+     158: astore        6
+     160: aload         6
+     162: ifnull        209
+     165: sipush        1024
+     168: newarray       byte
+     170: astore        7
+     172: iconst_0
+     173: istore        8
+     175: goto          188
+     178: aload         5
+     180: aload         7
+     182: iconst_0
+     183: iload         8
+     185: invokevirtual #391                // Method java/io/OutputStream.write:([BII)V
+     188: aload         6
+     190: aload         7
+     192: invokevirtual #397                // Method java/io/InputStream.read:([B)I
+     195: dup
+     196: istore        8
+     198: ifge          178
+     201: aload         5
+     203: invokevirtual #403                // Method java/io/OutputStream.close:()V
+     206: goto          245
+     209: invokestatic  #172                // Method org/lauro/blocklyMc/network/WebServerMC.access$0:()Ljava/util/logging/Logger;
+     212: getstatic     #406                // Field java/util/logging/Level.SEVERE:Ljava/util/logging/Level;
+     215: new           #184                // class java/lang/StringBuilder
+     218: dup
+     219: ldc_w         #409                // String Could not load the resource:
+     222: invokespecial #188                // Method java/lang/StringBuilder."<init>":(Ljava/lang/String;)V
+     225: aload_2
+     226: invokevirtual #191                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     229: invokevirtual #222                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+     232: invokevirtual #223                // Method java/util/logging/Logger.log:(Ljava/util/logging/Level;Ljava/lang/String;)V
+     235: goto          245
+     238: astore        5
+     240: aload         5
+     242: invokevirtual #411                // Method java/io/IOException.printStackTrace:()V
+     245: return
+    Exception table:
+       from    to  target type
+          12    51    54   Class java/io/IOException
+          79   235   238   Class java/io/IOException
+
+  private void setResponseHeaders(com.sun.net.httpserver.HttpExchange, java.lang.String) throws java.io.IOException;
+    Code:
+       0: aload_1
+       1: invokevirtual #428                // Method com/sun/net/httpserver/HttpExchange.getResponseHeaders:()Lcom/sun/net/httpserver/Headers;
+       4: astore_3
+       5: aload_3
+       6: ldc_w         #432                // String Content-Type
+       9: aload_2
+      10: invokevirtual #434                // Method com/sun/net/httpserver/Headers.set:(Ljava/lang/String;Ljava/lang/String;)V
+      13: aload_1
+      14: sipush        200
+      17: lconst_0
+      18: invokevirtual #439                // Method com/sun/net/httpserver/HttpExchange.sendResponseHeaders:(IJ)V
+      21: return
+
+  private void respondWithMessage(com.sun.net.httpserver.HttpExchange, java.lang.String) throws java.io.IOException;
+    Code:
+       0: aload_1
+       1: sipush        200
+       4: aload_2
+       5: invokevirtual #124                // Method java/lang/String.length:()I
+       8: i2l
+       9: invokevirtual #439                // Method com/sun/net/httpserver/HttpExchange.sendResponseHeaders:(IJ)V
+      12: aload_1
+      13: invokevirtual #369                // Method com/sun/net/httpserver/HttpExchange.getResponseBody:()Ljava/io/OutputStream;
+      16: astore_3
+      17: aload_3
+      18: aload_2
+      19: invokevirtual #445                // Method java/lang/String.getBytes:()[B
+      22: invokevirtual #449                // Method java/io/OutputStream.write:([B)V
+      25: aload_3
+      26: invokevirtual #403                // Method java/io/OutputStream.close:()V
+      29: return
+}

@@ -1,0 +1,355 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="procedures_defnoreturn" id=";czbZDN6]iAay8qa}y(G" x="13" y="13">
+    <field name="NAME">spaceship</field>
+    <comment pinned="false" h="80" w="160">Descrivi questa funzione...</comment>
+    <statement name="STACK">
+      <block type="controls_repeat_ext" id="|RePiP-P;ODwQBUL.k(L">
+        <value name="TIMES">
+          <shadow type="math_number" id="CbS1pIWAD@Y;R%qOQETc">
+            <field name="NUM">5</field>
+          </shadow>
+        </value>
+        <statement name="DO">
+          <block type="procedures_callnoreturn" id="DevoT-;w3sp=q)]clY6D">
+            <mutation name="base">
+              <arg name="radius"></arg>
+              <arg name="full"></arg>
+              <arg name="distance"></arg>
+            </mutation>
+            <value name="ARG0">
+              <block type="math_number" id="=tM7(J|~IA?e03+g[BMW">
+                <field name="NUM">10</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block type="logic_boolean" id="Js]%3dtu%3,dl=I!45|#">
+                <field name="BOOL">FALSE</field>
+              </block>
+            </value>
+            <value name="ARG2">
+              <block type="math_number" id="OF$NL6SRc[R7S6!,_}PK">
+                <field name="NUM">40</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <next>
+          <block type="procedures_callnoreturn" id="aA=x;fE470Gx!A/iOKE}">
+            <mutation name="torus"></mutation>
+            <next>
+              <block type="controls_repeat_ext" id="qc^U0UF[cCA,KFw}aI)p">
+                <value name="TIMES">
+                  <shadow type="math_number" id="Q[^es-yD|o-pO}7U18~N">
+                    <field name="NUM">5</field>
+                  </shadow>
+                </value>
+                <statement name="DO">
+                  <block type="procedures_callnoreturn" id="+WxfuL#$*2v}knE)b[xJ">
+                    <mutation name="base">
+                      <arg name="radius"></arg>
+                      <arg name="full"></arg>
+                      <arg name="distance"></arg>
+                    </mutation>
+                    <value name="ARG0">
+                      <block type="math_number" id="(]v#l7(::{eU?p%@7jE!">
+                        <field name="NUM">8</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block type="logic_boolean" id="^P!?ex_J[7Q+O`@ZZ?t%">
+                        <field name="BOOL">TRUE</field>
+                      </block>
+                    </value>
+                    <value name="ARG2">
+                      <block type="math_number" id="(.nc?A{dM3|gWW02HwY7">
+                        <field name="NUM">41</field>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="p,{!ZisRSq%%r|#/F44y" collapsed="true" x="213" y="13">
+    <mutation>
+      <arg name="radius"></arg>
+      <arg name="full"></arg>
+      <arg name="distance"></arg>
+    </mutation>
+    <field name="NAME">base</field>
+    <comment pinned="false" h="80" w="160">Descrivi questa funzione...</comment>
+    <statement name="STACK">
+      <block type="minecraft_gotomark" id=")(d@}!m0prWhrFjfbF-#">
+        <field name="origin">0</field>
+        <next>
+          <block type="minecraft_move" id="gzFV^Ch4YU3doWIbNW1p">
+            <field name="direction">FW</field>
+            <value name="times">
+              <block type="variables_get" id="{L@=_,`VpPI(i^cLE[n1">
+                <field name="VAR">distance</field>
+              </block>
+            </value>
+            <next>
+              <block type="controls_repeat_ext" id="Y}YIZfen1ntQgcSd-=$H">
+                <value name="TIMES">
+                  <shadow type="math_number" id="%O}H,ku-K`wD|b;a:zT6">
+                    <field name="NUM">180</field>
+                  </shadow>
+                </value>
+                <statement name="DO">
+                  <block type="controls_if" id="S#y}_e4mQ_ZQrk[~5V/f">
+                    <mutation else="1"></mutation>
+                    <value name="IF0">
+                      <block type="variables_get" id="go]-X/X#QJM=M()K$`ep">
+                        <field name="VAR">full</field>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="minecraft_ellipse" id="7|}RoV/H]8=08dB5Q!Z{">
+                        <field name="fill">true</field>
+                        <value name="width">
+                          <block type="variables_get" id="OS4^Gm3L79ZYTdCwKn6!">
+                            <field name="VAR">radius</field>
+                          </block>
+                        </value>
+                        <value name="height">
+                          <block type="variables_get" id="mrTEXuaTO=$W3_^EfGxr">
+                            <field name="VAR">radius</field>
+                          </block>
+                        </value>
+                        <value name="NAME">
+                          <block type="minecraft_materialbockOnlyOne" id="-47j/EGkQLL-th*E,FpE">
+                            <field name="NAME">b.air</field>
+                          </block>
+                        </value>
+                      </block>
+                    </statement>
+                    <statement name="ELSE">
+                      <block type="minecraft_ellipse" id="oxFQf1IyRcfaS_jM#qEC">
+                        <field name="fill">false</field>
+                        <value name="width">
+                          <block type="variables_get" id="Rf6$zqG1fDC5Sx%[PHA2">
+                            <field name="VAR">radius</field>
+                          </block>
+                        </value>
+                        <value name="height">
+                          <block type="variables_get" id="8KZ$(~7wDA~gR5_Tcx||">
+                            <field name="VAR">radius</field>
+                          </block>
+                        </value>
+                        <value name="NAME">
+                          <block type="minecraft_materialbockOnlyOne" id="^y`y%/{*=5M?VBSP{(#3">
+                            <field name="NAME">b.emerald_block</field>
+                            <value name="singleblock">
+                              <block type="minecraft_materialbockOnlyOne" id="J4OykBP(:O[_]ejm`sc{">
+                                <field name="NAME">b.clay</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </statement>
+                    <next>
+                      <block type="minecraft_set_elevation_relative" id="Qx+:cRwKQBG9^;_h!7iv">
+                        <value name="angle">
+                          <block type="math_number" id="4Q[{`O{vrljMG`%j%mLl">
+                            <field name="NUM">1</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+                <next>
+                  <block type="minecraft_set_elevation_relative" id="Oy=zzPNh_MpWjDgfj}fe">
+                    <value name="angle">
+                      <block type="math_number" id="W,lhH#z4gLH*ZW*k`{Cl">
+                        <field name="NUM">-180</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="controls_if" id="[fCD1X53g6[}OSM9nIO2">
+                        <value name="IF0">
+                          <block type="logic_negate" id="2(I-Q28+O(ODJ=0dUT[o">
+                            <value name="BOOL">
+                              <block type="variables_get" id="N/zmGf_`=,h5gxRR[S/x">
+                                <field name="VAR">full</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO0">
+                          <block type="minecraft_ellipse" id="SxcTid)Clo|JByn[ZE%U">
+                            <field name="fill">false</field>
+                            <value name="width">
+                              <block type="variables_get" id="wX%kUQf7F*hWtqBBvBn_">
+                                <field name="VAR">radius</field>
+                              </block>
+                            </value>
+                            <value name="height">
+                              <block type="variables_get" id="v$5-][O5mTIYcRC;YcgJ">
+                                <field name="VAR">radius</field>
+                              </block>
+                            </value>
+                            <value name="NAME">
+                              <block type="minecraft_materialbockOnlyOne" id=";D{|vcb$Fnia[R_L_jVX">
+                                <field name="NAME">b.glass</field>
+                              </block>
+                            </value>
+                          </block>
+                        </statement>
+                        <next>
+                          <block type="minecraft_rotate" id="=4(ML-OT@gLHCaf@A4U4">
+                            <value name="angle">
+                              <block type="math_number" id="JScFA/f@+{ao+`vzuc@F">
+                                <field name="NUM">72</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="%/3q2y96VXzN2gl64:3T" collapsed="true" x="213" y="38">
+    <field name="NAME">circle</field>
+    <comment pinned="false" h="80" w="160">Descrivi questa funzione...</comment>
+    <statement name="STACK">
+      <block type="minecraft_set_elevation" id="]xSMfWLZV)qHu+0b]Y#3">
+        <value name="angle">
+          <block type="math_number" id="AMR9}GOkE_/6VTCRd]yr">
+            <field name="NUM">90</field>
+          </block>
+        </value>
+        <next>
+          <block type="minecraft_rotate" id="Irnus$BL{V%VGw;({7|X">
+            <value name="angle">
+              <block type="math_number" id="o4HpY{)U+Ov`--|hGHYY">
+                <field name="NUM">90</field>
+              </block>
+            </value>
+            <next>
+              <block type="minecraft_ellipse" id="*wOBeJbKirTeUM8KejQ,">
+                <field name="fill">true</field>
+                <value name="width">
+                  <block type="math_number" id="Vfc)T2r/Bf`LThm[qTEW">
+                    <field name="NUM">2</field>
+                  </block>
+                </value>
+                <value name="height">
+                  <block type="math_number" id="?}d(hpN-8V|Mqdv3+sp/">
+                    <field name="NUM">2</field>
+                  </block>
+                </value>
+                <value name="NAME">
+                  <block type="minecraft_materialbockOnlyOne" id="Jm?hmDhZNC3M7lPi(ke!">
+                    <field name="NAME">b.air</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="minecraft_ellipse" id="gI5UPLg)R+2H1ViAOI=,">
+                    <field name="fill">false</field>
+                    <value name="width">
+                      <block type="math_number" id="tOG;BHArtC?[sPixMrRr">
+                        <field name="NUM">3</field>
+                      </block>
+                    </value>
+                    <value name="height">
+                      <block type="math_number" id="wDINSXFYrHH6R}qonrea">
+                        <field name="NUM">3</field>
+                      </block>
+                    </value>
+                    <value name="NAME">
+                      <block type="minecraft_materialbockOnlyOne" id="ut09Tdke?i=IG=b3,Eoe">
+                        <field name="NAME">b.gold_block</field>
+                        <value name="singleblock">
+                          <block type="minecraft_materialbockOnlyOne" id="!=c(UKH-%uuHZbAP9c3t">
+                            <field name="NAME">b.clay</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="minecraft_rotate" id="E/ZXhG`wTd)IPjrmO}}j">
+                        <value name="angle">
+                          <block type="math_number" id="9tYZa+qO!i=w*k{Qx7zY">
+                            <field name="NUM">-90</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="minecraft_set_elevation" id="tq{`i}5P8O|q!KwT)^B+">
+                            <value name="angle">
+                              <block type="math_number" id="Ceb~[]xi`1Azp]zjC%?a">
+                                <field name="NUM">0</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="rO+O:]D_RD+AkDk.lcUJ" collapsed="true" x="213" y="63">
+    <field name="NAME">torus</field>
+    <comment pinned="false" h="80" w="160">Descrivi questa funzione...</comment>
+    <statement name="STACK">
+      <block type="controls_repeat_ext" id="0O%)Gu1[b;5{,cJeOMo#">
+        <value name="TIMES">
+          <shadow type="math_number" id="y|%c01[$V6Os$w0~M9@@">
+            <field name="NUM">720</field>
+          </shadow>
+        </value>
+        <statement name="DO">
+          <block type="minecraft_gotomark" id="uO*IN[iS4lsZ}:W;0P$r">
+            <field name="origin">0</field>
+            <next>
+              <block type="minecraft_rotate" id="yutVR5iH(_v}=-T+jWb/">
+                <value name="angle">
+                  <block type="math_number" id="^pP04v@aX^0,1XT7ciJR">
+                    <field name="NUM">0.5</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="minecraft_move" id="NU(||}0.}FF*%,!g1g6K">
+                    <field name="direction">FW</field>
+                    <value name="times">
+                      <block type="math_number" id="zhb#E1/Rm0?#Wp.nt@,q">
+                        <field name="NUM">40</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="procedures_callnoreturn" id="Pl2,!DpZf~-n~@l3U*5l">
+                        <mutation name="circle"></mutation>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="minecraft_materialbockOnlyOne" id="1Xr`@Rc;TSib,IExlcVb" x="2012" y="737">
+    <field name="NAME">tile_oreRedstone</field>
+  </block>
+</xml>

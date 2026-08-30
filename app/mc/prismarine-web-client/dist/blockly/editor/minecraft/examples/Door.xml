@@ -1,0 +1,470 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="procedures_defnoreturn" id="zYiKF7_@1k%=kb)_B.CZ" collapsed="true" x="413" y="-62">
+    <field name="NAME">redstone</field>
+    <comment pinned="false" h="80" w="160">Describe this function...</comment>
+    <statement name="STACK">
+      <block type="minecraft_move" id="g6{USY#S3PJg,sJVyFDy">
+        <field name="direction">LEFT</field>
+        <value name="times">
+          <block type="math_number" id="bFctRX;VD-GSRJ0Bvz7$">
+            <field name="NUM">5</field>
+          </block>
+        </value>
+        <next>
+          <block type="minecraft_rotate" id="Y5#sh:HH){|hEeSP*1+l">
+            <value name="angle">
+              <block type="math_number" id="R,AvamGs?!-m2mdF],a5">
+                <field name="NUM">90</field>
+              </block>
+            </value>
+            <next>
+              <block type="minecraft_line" id="GZQh+/jYr0dm6R,}-X8)">
+                <value name="length">
+                  <block type="math_number" id="UQXC-YP5DF}J-V05M|RR">
+                    <field name="NUM">12</field>
+                  </block>
+                </value>
+                <value name="NAME">
+                  <block type="minecraft_materialbockOnlyOne" id="cqX-CZ_NcX6`fSTa5*)J">
+                    <field name="NAME">b.redstone_wire</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="minecraft_rotate" id="6E{h#k4.k`e9]YlVMWba">
+                    <value name="angle">
+                      <block type="math_number" id="MoE|tutj]^liDSOQIK_s">
+                        <field name="NUM">-90</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="gzef[$LLx0Q1%zqb5Zh2" x="187" y="-37">
+    <field name="NAME">door</field>
+    <comment pinned="false" h="80" w="160">Describe this function...</comment>
+    <statement name="STACK">
+      <block type="procedures_callnoreturn" id="hOqJ82Vs-dQk*697G;s6">
+        <mutation name="pistons"></mutation>
+        <next>
+          <block type="minecraft_move" id="u4)SELIHi[UPUhETv-v{">
+            <field name="direction">FW</field>
+            <value name="times">
+              <block type="math_number" id="zYR=T}RvC0t,];NaSOT(">
+                <field name="NUM">1</field>
+              </block>
+            </value>
+            <next>
+              <block type="procedures_callnoreturn" id="-FDWWKMNP?lm1moV.9rW">
+                <mutation name="redstone"></mutation>
+                <next>
+                  <block type="minecraft_move" id="){EYFj:auQZK0c?%ih-s">
+                    <field name="direction">FW</field>
+                    <value name="times">
+                      <block type="math_number" id="Um1:N_L:0jHauG_h@)?!">
+                        <field name="NUM">1</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="procedures_callnoreturn" id="Bbm0g:I8;QtBmBC]*=1!">
+                        <mutation name="lever"></mutation>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="Mj@$2]Rl#zIGO;m;-5~V" collapsed="true" x="413" y="-38">
+    <field name="NAME">lever</field>
+    <comment pinned="false" h="80" w="160">Describe this function...</comment>
+    <statement name="STACK">
+      <block type="minecraft_move" id="USpii/18OU7i38H?Jt`h">
+        <field name="direction">RIGHT</field>
+        <value name="times">
+          <block type="math_number" id="b]%O.:n83=aPBZ5qM:)A">
+            <field name="NUM">2</field>
+          </block>
+        </value>
+        <next>
+          <block type="minecraft_block" id="%3R+$geu,L2}(e/}3M@9">
+            <value name="NAME">
+              <block type="minecraft_materialbockOnlyOne" id="lKs-0qnq`ue-IU}%N=84">
+                <field name="NAME">b.gold_block</field>
+              </block>
+            </value>
+            <next>
+              <block type="minecraft_move" id="%=jTFWTs{rTaWqC(-8[p">
+                <field name="direction">LEFT</field>
+                <value name="times">
+                  <block type="math_number" id="GG%qBkajT{`dj(5#y(/8">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="minecraft_block" id="!U8ynbJL.vI^jhXudn*/">
+                    <value name="NAME">
+                      <block type="minecraft_direction" id="eJHNG~q*8.u|}EL`f{{.">
+                        <field name="NAME">RIGHT</field>
+                        <value name="singleblock">
+                          <block type="minecraft_materialbockOnlyOne" id="Y2#{N3qdIe[ah2:d%$vs">
+                            <field name="NAME">b.lever</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="u~y4%MFCqyBF4OUawBrQ" collapsed="true" x="412" y="-12">
+    <field name="NAME">pistons</field>
+    <comment pinned="false" h="80" w="160">Describe this function...</comment>
+    <statement name="STACK">
+      <block type="minecraft_move" id="8U3R)UHQj=*/D?lo-%-q">
+        <field name="direction">UP</field>
+        <value name="times">
+          <block type="math_number" id="HXS20-7[7KCRa^(-Gl+.">
+            <field name="NUM">1</field>
+          </block>
+        </value>
+        <next>
+          <block type="minecraft_set_elevation" id="OU$:/3)GZ8KL9@@UitUi">
+            <value name="angle">
+              <block type="math_number" id="$s#*wnIb?ISNoMZ:m6vw">
+                <field name="NUM">90</field>
+              </block>
+            </value>
+            <next>
+              <block type="minecraft_drawing" id="EbqLivm$Dpz_xcVZwhhM">
+                <field name="col1">#333333</field>
+                <field name="col2">#ffffff</field>
+                <field name="col3">#33ff33</field>
+                <field name="col4">#ffff66</field>
+                <field name="col5">#ff0000</field>
+                <field name="col6">#333333</field>
+                <field name="col7">#333333</field>
+                <field name="col8">#333333</field>
+                <field name="col9">#333333</field>
+                <field name="col10">#333333</field>
+                <value name="matlist">
+                  <block type="lists_create_with" id="GuWOxzddm9A8m$|-.F!X">
+                    <mutation items="4"></mutation>
+                    <value name="ADD0">
+                      <block type="minecraft_drawcol_red" id="q1Q$Aq-`)uzD+hB[XJ;V">
+                        <field name="col">#ffffff</field>
+                        <value name="drawcolour">
+                          <block type="minecraft_drawcol_red" id="U5(VGG(zDn%8MxCg%88Z">
+                            <field name="col">#ffffff</field>
+                            <value name="drawcolour">
+                              <block type="minecraft_drawcol_red" id="LT!mcPe83rjid%_]Vw8q">
+                                <field name="col">#333333</field>
+                                <value name="drawcolour">
+                                  <block type="minecraft_drawcol_red" id="CwC`W#+[2|t_l~9:U93L">
+                                    <field name="col">#333333</field>
+                                    <value name="drawcolour">
+                                      <block type="minecraft_drawcol_red" id="3|mg/y:f;qE4gM|9n,Uz">
+                                        <field name="col">#333333</field>
+                                        <value name="drawcolour">
+                                          <block type="minecraft_drawcol_red" id="K81_[JS4Bo=i~5$Qkvff">
+                                            <field name="col">#333333</field>
+                                            <value name="drawcolour">
+                                              <block type="minecraft_drawcol_red" id="1Tf_f^LDTwEc_VGnjNVh">
+                                                <field name="col">#333333</field>
+                                                <value name="drawcolour">
+                                                  <block type="minecraft_drawcol_red" id="06:E14rz(o]@(.ul)L#|">
+                                                    <field name="col">#333333</field>
+                                                    <value name="drawcolour">
+                                                      <block type="minecraft_drawcol_red" id="lqiXk+5ISK2v`z!h_Dzd">
+                                                        <field name="col">#333333</field>
+                                                        <value name="drawcolour">
+                                                          <block type="minecraft_drawcol_red" id="iz},yLBbOMp3BYCSR|3H">
+                                                            <field name="col">#333333</field>
+                                                            <value name="drawcolour">
+                                                              <block type="minecraft_drawcol_red" id="G_BZq3%f+HL0-eHs5{,_">
+                                                                <field name="col">#ffffff</field>
+                                                                <value name="drawcolour">
+                                                                  <block type="minecraft_drawcol_red" id="Om@$l@xg:pQhb#uF-mh2">
+                                                                    <field name="col">#ffffff</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="ADD1">
+                      <block type="minecraft_drawcol_red" id="{KwE_%s1WymOoO_7b6nb">
+                        <field name="col">#ffffff</field>
+                        <value name="drawcolour">
+                          <block type="minecraft_drawcol_red" id="*e!0Y)Eo]]_?1-;N|Vxr">
+                            <field name="col">#ffffff</field>
+                            <value name="drawcolour">
+                              <block type="minecraft_drawcol_red" id="%G,BYZYqr@otIJM#l5Tv">
+                                <field name="col">#ff0000</field>
+                                <value name="drawcolour">
+                                  <block type="minecraft_drawcol_red" id="nQ~R7E3xG-4|XRZMZ1hg">
+                                    <field name="col">#33ff33</field>
+                                    <value name="drawcolour">
+                                      <block type="minecraft_drawcol_red" id="q%Ny,8,jL3qOMRGT-5qd">
+                                        <field name="col">#333333</field>
+                                        <value name="drawcolour">
+                                          <block type="minecraft_drawcol_red" id="Q-{1l@jj@3|yE^=s}},v">
+                                            <field name="col">#ffffff</field>
+                                            <value name="drawcolour">
+                                              <block type="minecraft_drawcol_red" id="/#=?)9pUCMw)pBP@RZKM">
+                                                <field name="col">#ffffff</field>
+                                                <value name="drawcolour">
+                                                  <block type="minecraft_drawcol_red" id="wI7x;Hw2F}S/n@n/d2Ym">
+                                                    <field name="col">#333333</field>
+                                                    <value name="drawcolour">
+                                                      <block type="minecraft_drawcol_red" id="H^1MMT*-v:ZcBJLX~vC#">
+                                                        <field name="col">#ffff66</field>
+                                                        <value name="drawcolour">
+                                                          <block type="minecraft_drawcol_red" id="oo[YA0`v!I,sVHIDOD,t">
+                                                            <field name="col">#ff0000</field>
+                                                            <value name="drawcolour">
+                                                              <block type="minecraft_drawcol_red" id="xfDybn~*S,zy^;!%8D;d">
+                                                                <field name="col">#ffffff</field>
+                                                                <value name="drawcolour">
+                                                                  <block type="minecraft_drawcol_red" id="8I6Kg#wZTy~9aiNrSx6A">
+                                                                    <field name="col">#ffffff</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="ADD2">
+                      <block type="minecraft_drawcol_red" id="4P(^4-de*wq~xu.7V{dv">
+                        <field name="col">#ffffff</field>
+                        <value name="drawcolour">
+                          <block type="minecraft_drawcol_red" id="00_(_G;V[Bk,Uf/|:z6S">
+                            <field name="col">#ff0000</field>
+                            <value name="drawcolour">
+                              <block type="minecraft_drawcol_red" id="zuNbh`oXvMud#8|M)(Re">
+                                <field name="col">#333333</field>
+                                <value name="drawcolour">
+                                  <block type="minecraft_drawcol_red" id="_pygND7EB3ed{CifJQcc">
+                                    <field name="col">#33ff33</field>
+                                    <value name="drawcolour">
+                                      <block type="minecraft_drawcol_red" id="SRTOnO*)IOP0%;SmW2z[">
+                                        <field name="col">#333333</field>
+                                        <value name="drawcolour">
+                                          <block type="minecraft_drawcol_red" id=";Gd19|rkh3By4L^UXt1e">
+                                            <field name="col">#ffffff</field>
+                                            <value name="drawcolour">
+                                              <block type="minecraft_drawcol_red" id="TQ04K5W`e.9Y(MtpwaK/">
+                                                <field name="col">#ffffff</field>
+                                                <value name="drawcolour">
+                                                  <block type="minecraft_drawcol_red" id="NT}B=`#B2lQ-mMdlhXRC">
+                                                    <field name="col">#333333</field>
+                                                    <value name="drawcolour">
+                                                      <block type="minecraft_drawcol_red" id="}z1Nw)PE^DQ/Eq{2Ukc{">
+                                                        <field name="col">#ffff66</field>
+                                                        <value name="drawcolour">
+                                                          <block type="minecraft_drawcol_red" id="WEz$i1E[e^(s@W@5U9lo">
+                                                            <field name="col">#333333</field>
+                                                            <value name="drawcolour">
+                                                              <block type="minecraft_drawcol_red" id="`@mO`avH!V!Q2_^mO6Gm">
+                                                                <field name="col">#ff0000</field>
+                                                                <value name="drawcolour">
+                                                                  <block type="minecraft_drawcol_red" id=".*0|[K$*~Uw:qr+CD6TS">
+                                                                    <field name="col">#ffffff</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="ADD3">
+                      <block type="minecraft_drawcol_red" id="VJjvPl3YA5:IS97z0maw">
+                        <field name="col">#ff0000</field>
+                        <value name="drawcolour">
+                          <block type="minecraft_drawcol_red" id="c1C5s=b;p$W4L:2qij@8">
+                            <field name="col">#333333</field>
+                            <value name="drawcolour">
+                              <block type="minecraft_drawcol_red" id="-Inf?qDkh*z5~^shtYq=">
+                                <field name="col">#333333</field>
+                                <value name="drawcolour">
+                                  <block type="minecraft_drawcol_red" id=",-aNY92U~%xw4P/]W#Aq">
+                                    <field name="col">#33ff33</field>
+                                    <value name="drawcolour">
+                                      <block type="minecraft_drawcol_red" id="URx3Ti.!.!E0??{D6YwS">
+                                        <field name="col">#333333</field>
+                                        <value name="drawcolour">
+                                          <block type="minecraft_drawcol_red" id="@g%eYji[FuT7jh8)6U$[">
+                                            <field name="col">#ffffff</field>
+                                            <value name="drawcolour">
+                                              <block type="minecraft_drawcol_red" id="G:n%+%/^ekjy^P{DhoeG">
+                                                <field name="col">#ffffff</field>
+                                                <value name="drawcolour">
+                                                  <block type="minecraft_drawcol_red" id=":P||RQD{8Fzx%,str!D^">
+                                                    <field name="col">#333333</field>
+                                                    <value name="drawcolour">
+                                                      <block type="minecraft_drawcol_red" id="ra=fkd)FPC+$s`mR9!A?">
+                                                        <field name="col">#ffff66</field>
+                                                        <value name="drawcolour">
+                                                          <block type="minecraft_drawcol_red" id="ipf^sIS*Pjoe]*lOt9j]">
+                                                            <field name="col">#333333</field>
+                                                            <value name="drawcolour">
+                                                              <block type="minecraft_drawcol_red" id="8W~uHlklG.=IPJ*1ZB`?">
+                                                                <field name="col">#333333</field>
+                                                                <value name="drawcolour">
+                                                                  <block type="minecraft_drawcol_red" id="Pr%j8OMb%QqPdiAhgU)`">
+                                                                    <field name="col">#ff0000</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="blockchoice1">
+                  <block type="minecraft_materialbockOnlyOne" id="*X_kH?g?+Av]kHpGxE;P">
+                    <field name="NAME">b.black_wool</field>
+                  </block>
+                </value>
+                <value name="blockchoice2">
+                  <block type="minecraft_materialbockOnlyOne" id="r=;!HiL9]JQkNY0-BbQ3">
+                    <field name="NAME">b.air</field>
+                  </block>
+                </value>
+                <value name="blockchoice3">
+                  <block type="minecraft_direction" id="^@.d[=]cNERZl}v72.i@">
+                    <field name="NAME">RIGHT</field>
+                    <value name="singleblock">
+                      <block type="minecraft_materialbockOnlyOne" id=".#*ixGogMaTP}8pER#sC">
+                        <field name="NAME">b.sticky_piston</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="blockchoice4">
+                  <block type="minecraft_direction" id="{JD;ay;~-LSQ,S#nJQW|">
+                    <field name="NAME">LEFT</field>
+                    <value name="singleblock">
+                      <block type="minecraft_materialbockOnlyOne" id="zAUOZ62vTLTTG/TNVtWw">
+                        <field name="NAME">b.sticky_piston</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="blockchoice5">
+                  <block type="minecraft_materialbockOnlyOne" id="5iOq!z6;jy_lh|)Ec!~]">
+                    <field name="NAME">b.redstone_wire</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="minecraft_set_elevation" id="1fmojcGanh%7o$CV{dUj">
+                    <value name="angle">
+                      <block type="math_number" id="[n-2.mSyXAIpmhc0+vo;">
+                        <field name="NUM">0</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="minecraft_move" id="_x9+I:E]t-[z-`!(.:P,">
+                        <field name="direction">DOWN</field>
+                        <value name="times">
+                          <block type="math_number" id="K,uJp$?z,-%U-hN,N?cB">
+                            <field name="NUM">1</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>

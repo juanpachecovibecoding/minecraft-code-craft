@@ -1,0 +1,186 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="procedures_defnoreturn" id="N[i/%9*kDM:jQ#vP0Olz" x="-162" y="-212">
+    <field name="NAME">boat</field>
+    <comment pinned="false" h="80" w="160">Descrivi questa funzione...</comment>
+    <statement name="STACK">
+      <block type="minecraft_move" id="W~bRPBX,gO#[2%[U_[`u">
+        <field name="direction">UP</field>
+        <value name="times">
+          <block type="math_number" id="Dr4SRrn2j*=D8(q(y)o8">
+            <field name="NUM">1</field>
+          </block>
+        </value>
+        <next>
+          <block type="minecraft_move" id=")jbOFUYvIdR`]Ov0^OG~">
+            <field name="direction">FW</field>
+            <value name="times">
+              <block type="math_number" id="LGbbba*RhK0J2pk7j57-">
+                <field name="NUM">3</field>
+              </block>
+            </value>
+            <next>
+              <block type="minecraft_line" id="}3^ExzQ#?N5$m[Jt!#Mt">
+                <value name="length">
+                  <block type="math_number" id="erqOj8?_o14$y!1,nR~Q">
+                    <field name="NUM">2</field>
+                  </block>
+                </value>
+                <value name="NAME">
+                  <block type="minecraft_materialbockOnlyOne" id="#/b#(J}w/deTdpB$%o8#">
+                    <field name="NAME">b.slime_block</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="minecraft_move" id="z^YN`7cm+5gnZZqr/B_]">
+                    <field name="direction">RIGHT</field>
+                    <value name="times">
+                      <block type="math_number" id="O4Y-)#HiAd@)PEHC8%~l">
+                        <field name="NUM">1</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="minecraft_line" id="Gjr;G9aUWebqa#;e[g]B">
+                        <value name="length">
+                          <block type="math_number" id="r_L]2ef^Nzr;`|z|.4$;">
+                            <field name="NUM">3</field>
+                          </block>
+                        </value>
+                        <value name="NAME">
+                          <block type="minecraft_direction" id="e^!R(ZJZn0pM:ItgPI:B">
+                            <field name="NAME">FW</field>
+                            <value name="singleblock">
+                              <block type="minecraft_materialbockOnlyOne" id="1+-]ceUe}B2D@Hk;/9@h">
+                                <field name="NAME">b.sticky_piston</field>
+                                <value name="singleblock">
+                                  <block type="minecraft_materialbockOnlyOne" id="@L!S+n2bLQs*K*;KJ|vw">
+                                    <field name="NAME">b.slime_block</field>
+                                    <value name="singleblock">
+                                      <block type="minecraft_direction" id="b*m$!Qb1t?g3vnk76KdM">
+                                        <field name="NAME">BW</field>
+                                        <value name="singleblock">
+                                          <block type="minecraft_materialbockOnlyOne" id="uvqMG}-UR6vP$KvV`ocI">
+                                            <field name="NAME">b.sticky_piston</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="minecraft_move" id="GFT9aDII?e$c8^K]-Bl9">
+                            <field name="direction">RIGHT</field>
+                            <value name="times">
+                              <block type="math_number" id=":T;{L}dA]|Qh~rFcoWt2">
+                                <field name="NUM">1</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="minecraft_line" id="]Q^-G`O:0o8}=LB/e/$1">
+                                <value name="length">
+                                  <block type="math_number" id=";g7_kz{^YahW,O5XER]_">
+                                    <field name="NUM">2</field>
+                                  </block>
+                                </value>
+                                <value name="NAME">
+                                  <block type="minecraft_materialbockOnlyOne" id="|lM39tP*s:U$fT!4}k5-">
+                                    <field name="NAME">b.air</field>
+                                    <value name="singleblock">
+                                      <block type="minecraft_direction" id="2${`oA[({*kovikyDoVG">
+                                        <field name="NAME">BW</field>
+                                        <value name="singleblock">
+                                          <block type="minecraft_materialbockOnlyOne" id="OAw#zM[#1HLLNGljY_:T">
+                                            <field name="NAME">b.observer</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="minecraft_move" id="YPaCuP6AFHTf~6EW%]^y">
+                                    <field name="direction">UP</field>
+                                    <value name="times">
+                                      <block type="math_number" id="mk]FcKuJUY91gZ%N@!F%">
+                                        <field name="NUM">1</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="minecraft_move" id="WS]/u0y,%[gx(sdvP.o{">
+                                        <field name="direction">LEFT</field>
+                                        <value name="times">
+                                          <block type="math_number" id="wS8n-AvuuSI;eR3I=.HB">
+                                            <field name="NUM">1</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="minecraft_line" id="|8M)R7]2n%}O.V^o!w#j">
+                                            <value name="length">
+                                              <block type="math_number" id="L2tN],rSgy4B$wq=A0!U">
+                                                <field name="NUM">2</field>
+                                              </block>
+                                            </value>
+                                            <value name="NAME">
+                                              <block type="minecraft_materialbockOnlyOne" id="h).lwazC8(OV+-r^zX]/">
+                                                <field name="NAME">b.air</field>
+                                                <value name="singleblock">
+                                                  <block type="minecraft_materialbockOnlyOne" id="$KM_%c?2v%9Pv*0}^3rE">
+                                                    <field name="NAME">b.redstone_block</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="minecraft_move" id="yq8;OENWDD3O*mVO[YHG">
+                                                <field name="direction">LEFT</field>
+                                                <value name="times">
+                                                  <block type="math_number" id="m{(J76i~WUo{Ir~__`W]">
+                                                    <field name="NUM">1</field>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="minecraft_line" id="f{k28i=%e(|{Jg]@goi_">
+                                                    <value name="length">
+                                                      <block type="math_number" id="^;9ok4-yK{JmFU:Cfd-@">
+                                                        <field name="NUM">2</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="NAME">
+                                                      <block type="minecraft_entity" id="h81K@GT1^z2=9c.hQuA8">
+                                                        <field name="NAME">e.boat</field>
+                                                        <value name="singleblock">
+                                                          <block type="minecraft_materialbockOnlyOne" id="9${_X|~N:9p6qAA`;]f6">
+                                                            <field name="NAME">b.redstone_block</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>

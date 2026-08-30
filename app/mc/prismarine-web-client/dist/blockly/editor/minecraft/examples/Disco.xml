@@ -1,0 +1,219 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="procedures_defnoreturn" id="uw)s0ATocyNuO)jVkbkY" x="0" y="0">
+    <field name="NAME">disco</field>
+    <comment pinned="false" h="80" w="160">Descrivi questa funzione...</comment>
+    <statement name="STACK">
+      <block type="variables_set" id="a0?3KIWecuL=]9Pz`MMC">
+        <field name="VAR">len</field>
+        <value name="VALUE">
+          <block type="math_number" id="EwB3E.D4x{waM-af+z#:">
+            <field name="NUM">20</field>
+          </block>
+        </value>
+        <next>
+          <block type="minecraft_move" id=";;CICRg4-.8k2i*l#$O*">
+            <field name="direction">DOWN</field>
+            <value name="times">
+              <block type="math_number" id="Tg2QGl0zzg6uv2)f[V=f">
+                <field name="NUM">2</field>
+              </block>
+            </value>
+            <next>
+              <block type="minecraft_rectangle" id="E/?rFz=az#`QFM0BL?9O">
+                <field name="fill">false</field>
+                <value name="width">
+                  <block type="variables_get" id="Y|#xCPcsucw`HP.L|@Cn">
+                    <field name="VAR">len</field>
+                  </block>
+                </value>
+                <value name="height">
+                  <block type="variables_get" id="p,200AU=v]G?8Fm*67=T">
+                    <field name="VAR">len</field>
+                  </block>
+                </value>
+                <value name="NAME">
+                  <block type="minecraft_materialbockOnlyOne" id="*2pbcs{P8Rkre6,U68)|">
+                    <field name="NAME">b.black_concrete</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="minecraft_rectangle" id="zaxEna4z5/$2VCp[K.@@">
+                    <field name="fill">true</field>
+                    <value name="width">
+                      <block type="math_arithmetic" id="^K!!gUH)g9h+W={kC%}/">
+                        <field name="OP">MINUS</field>
+                        <value name="A">
+                          <shadow type="math_number" id="3wUndi()|J^etp.wgq(8">
+                            <field name="NUM">1</field>
+                          </shadow>
+                          <block type="variables_get" id="Tdm|$@hO.Y_ybZ_I.9}a">
+                            <field name="VAR">len</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <shadow type="math_number" id="pP~_8QoR*X7DB6s9Vr.t">
+                            <field name="NUM">2</field>
+                          </shadow>
+                          <block type="math_number" id="|EppJMeC.CuDOT~NS{mr">
+                            <field name="NUM">2</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="height">
+                      <block type="math_arithmetic" id="6m^s_q*Uf#=Dus]9DRoC">
+                        <field name="OP">MINUS</field>
+                        <value name="A">
+                          <shadow type="math_number" id="3wUndi()|J^etp.wgq(8">
+                            <field name="NUM">1</field>
+                          </shadow>
+                          <block type="variables_get" id="Yh2IV^ED6Ai#p,IO6Um_">
+                            <field name="VAR">len</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <shadow type="math_number" id="!%*ZW$O*.W8M,Ell%_i.">
+                            <field name="NUM">2</field>
+                          </shadow>
+                          <block type="math_number" id="@,/MwvKK(5/3L-==NXUn">
+                            <field name="NUM">2</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="NAME">
+                      <block type="minecraft_materialbockOnlyOne" id="LMWsE(q0/0|CmYVXK)K-">
+                        <field name="NAME">b.spruce_pressure_plate</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="minecraft_move" id="3h|B[es/rL2S[N;Fh|Na">
+                        <field name="direction">UP</field>
+                        <value name="times">
+                          <block type="math_number" id="V)wnvW@g/ORHG(]o(cS~">
+                            <field name="NUM">1</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="minecraft_rectangle" id="/Jjn!cNu/rzXY@22T3yU">
+                            <field name="fill">true</field>
+                            <value name="width">
+                              <block type="math_number" id="AbEHHgR%-Nk@A3e~YtiY">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="height">
+                              <block type="math_number" id="e)1{XMXFpyrFtfv*l*o7">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <value name="NAME">
+                              <block type="minecraft_entity" id="ok%u!]rT/i;ccwM/On?j">
+                                <field name="NAME">e.parrot</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="minecraft_rectangle" id="t2:cNP5epMDk.2/:IAjN">
+                                <field name="fill">true</field>
+                                <value name="width">
+                                  <block type="math_arithmetic" id="SncGo}C/1+JdJ$FmQ6th">
+                                    <field name="OP">MINUS</field>
+                                    <value name="A">
+                                      <shadow type="math_number" id="3wUndi()|J^etp.wgq(8">
+                                        <field name="NUM">1</field>
+                                      </shadow>
+                                      <block type="variables_get" id="9xeWi+=X[yo`yE#]i,A_">
+                                        <field name="VAR">len</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <shadow type="math_number" id="pP~_8QoR*X7DB6s9Vr.t">
+                                        <field name="NUM">2</field>
+                                      </shadow>
+                                      <block type="math_number" id="I$P[J(g,xbNwx4xvoVUM">
+                                        <field name="NUM">2</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="height">
+                                  <block type="math_arithmetic" id="6^@IV*!192|LEAJV$f#D">
+                                    <field name="OP">MINUS</field>
+                                    <value name="A">
+                                      <shadow type="math_number" id="3wUndi()|J^etp.wgq(8">
+                                        <field name="NUM">1</field>
+                                      </shadow>
+                                      <block type="variables_get" id="FeEL-P!,A$)8e(^NJIL0">
+                                        <field name="VAR">len</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <shadow type="math_number" id="pP~_8QoR*X7DB6s9Vr.t">
+                                        <field name="NUM">2</field>
+                                      </shadow>
+                                      <block type="math_number" id="^=Ci!~k4?sg5f3PB+3s*">
+                                        <field name="NUM">2</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="NAME">
+                                  <block type="minecraft_materialbockOnlyOne" id="RF64+/-d8fA[SGMV]cfu">
+                                    <field name="NAME">b.redstone_lamp</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="controls_repeat_ext" id="!n$C1g]?]RaYnyVr:6vD">
+                                    <value name="TIMES">
+                                      <shadow type="math_number" id="-BwI.F-xszQ%K~n{HiS!">
+                                        <field name="NUM">3</field>
+                                      </shadow>
+                                    </value>
+                                    <statement name="DO">
+                                      <block type="minecraft_rectangle" id="wX38d;mm?%f+R[atf%v?">
+                                        <field name="fill">false</field>
+                                        <value name="width">
+                                          <block type="variables_get" id="m1r)I{X-s,DY,K%9m2Cv">
+                                            <field name="VAR">len</field>
+                                          </block>
+                                        </value>
+                                        <value name="height">
+                                          <block type="variables_get" id="SrE@8`;Ofznf.uH@)7j/">
+                                            <field name="VAR">len</field>
+                                          </block>
+                                        </value>
+                                        <value name="NAME">
+                                          <block type="minecraft_materialbockOnlyOne" id="}Bz+h#LVjqC}aM!Xr8nl">
+                                            <field name="NAME">b.black_concrete</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="minecraft_move" id="O}2tR25BqiPKYhS`=yma">
+                                            <field name="direction">UP</field>
+                                            <value name="times">
+                                              <block type="math_number" id="E,8nj/A-fUI:QfR3?$=[">
+                                                <field name="NUM">1</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </statement>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>

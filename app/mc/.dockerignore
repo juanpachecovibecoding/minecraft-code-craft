@@ -1,0 +1,15 @@
+# Ignore source repositories and build caches to keep image size small
+BuildData/
+Bukkit/
+CraftBukkit/
+Spigot/
+apache-maven-3.6.0/
+work/
+BuildTools.jar
+BuildTools.log.txt
+*.deb
+*.tar
+logs/
+spigot_stdout.log
+prismarine-web-client/node_modules/
+prismarine-web-client/.git/

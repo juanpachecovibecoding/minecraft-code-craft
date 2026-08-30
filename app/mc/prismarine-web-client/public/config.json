@@ -1,0 +1,6 @@
+{
+  "defaultHost": "minecraft.playcode.com.ar",
+  "defaultVersion": "1.16.5",
+  "supabaseUrl": "",
+  "supabaseAnonKey": ""
+}

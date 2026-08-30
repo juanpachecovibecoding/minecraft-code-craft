@@ -1,0 +1,50 @@
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    margin: 5% auto; /* 5% from the top and centered */
+    padding: 0px;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: 888;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.tg  {border-collapse:collapse;border-spacing:0;width:600px;background-color: #516a32;margin:auto;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:0px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-top-width:1px}
+.tg .tg-cell{font-size:18px;text-align:center;vertical-align:top}
+.tg .tg-cell-lab{font-size:18px;text-align:center;vertical-align:top;border-top-width: 0px;text-align: center;background-color: #94aebb}
+
+.modalDeployResultMessageStyle  {
+	margin:auto;
+	padding: 5%;
+	background-color:white;
+	
+    border-width: 20px;
+    border-style: solid;
+    border-radius: 30px;
+}

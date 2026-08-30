@@ -1,0 +1,798 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="procedures_defnoreturn" id="M#+Aqh%/M#S8N/J8SVsC" x="87" y="-37">
+    <field name="NAME">skull</field>
+    <comment pinned="false" h="80" w="160">Descrivi questa funzione...</comment>
+    <statement name="STACK">
+      <block type="minecraft_move" id="G!3}8-w:2mmmGtwdj$-^">
+        <field name="direction">UP</field>
+        <value name="times">
+          <block type="math_number" id="E^#$Pg|WMFi-M[ukc@gT">
+            <field name="NUM">6</field>
+          </block>
+        </value>
+        <next>
+          <block type="minecraft_set_elevation" id="{A|@)qWsrM$ma8F*z+mh">
+            <value name="angle">
+              <block type="math_number" id="`FwA^rirOY[$2/q,qxKY">
+                <field name="NUM">90</field>
+              </block>
+            </value>
+            <next>
+              <block type="controls_repeat_ext" id="(W1c,JP-cWII#=);CB2C">
+                <value name="TIMES">
+                  <shadow type="math_number" id="Md6~A7gz/E^q?l85+_]J">
+                    <field name="NUM">4</field>
+                  </shadow>
+                </value>
+                <statement name="DO">
+                  <block type="minecraft_drawing" id="tXeyy4[8D8kP0Xh`q!mW">
+                    <field name="col1">#ff0000</field>
+                    <field name="col2">#ffff00</field>
+                    <field name="col3">#000000</field>
+                    <field name="col4">#ffffff</field>
+                    <field name="col5">#cc66cc</field>
+                    <field name="col6">#333333</field>
+                    <field name="col7">#333333</field>
+                    <field name="col8">#333333</field>
+                    <field name="col9">#333333</field>
+                    <field name="col10">#333333</field>
+                    <value name="matlist">
+                      <block type="lists_create_with" id="e}@Af}:R3u5WGWX)Bv%N">
+                        <mutation items="13"></mutation>
+                        <value name="ADD0">
+                          <block type="minecraft_drawcol_yellow" id="2u_NsCw{PLPU2!C6M9w/">
+                            <field name="col">#ffff00</field>
+                            <value name="drawcolour">
+                              <block type="minecraft_drawcol_yellow" id="[|I.ooK;8y_XXIK,FYw[">
+                                <field name="col">#ffff00</field>
+                                <value name="drawcolour">
+                                  <block type="minecraft_drawcol_yellow" id="Ah[q!%#G|Q+X$b6~^;9(">
+                                    <field name="col">#ffff00</field>
+                                    <value name="drawcolour">
+                                      <block type="minecraft_drawcol_yellow" id="8}f]O`#?SZylh}jL^V|J">
+                                        <field name="col">#ffff00</field>
+                                        <value name="drawcolour">
+                                          <block type="minecraft_drawcol_yellow" id="?o,:eFkJz%Z~4avQ?I`_">
+                                            <field name="col">#ffff00</field>
+                                            <value name="drawcolour">
+                                              <block type="minecraft_drawcol_yellow" id="I9$q1arMqg2GD3NQn.#}">
+                                                <field name="col">#ffff00</field>
+                                                <value name="drawcolour">
+                                                  <block type="minecraft_drawcol_yellow" id="Cl+PMRqW5+29W}PiATU!">
+                                                    <field name="col">#ffff00</field>
+                                                    <value name="drawcolour">
+                                                      <block type="minecraft_drawcol_yellow" id="~)~=G)%DS_pWOw}Hy5zK">
+                                                        <field name="col">#ffff00</field>
+                                                        <value name="drawcolour">
+                                                          <block type="minecraft_drawcol_yellow" id="50rwM+7e!]AOVGNJNRm+">
+                                                            <field name="col">#ffff00</field>
+                                                            <value name="drawcolour">
+                                                              <block type="minecraft_drawcol_yellow" id="rK1gLMyDAe-`Fm$7m|+q">
+                                                                <field name="col">#ffff00</field>
+                                                                <value name="drawcolour">
+                                                                  <block type="minecraft_drawcol_yellow" id="Ga/~O9r{^5cJt5vikjqq">
+                                                                    <field name="col">#ffff00</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="ADD1">
+                          <block type="minecraft_drawcol_yellow" id="cCYS115+5z-~+^:(,2(v">
+                            <field name="col">#ffff00</field>
+                            <value name="drawcolour">
+                              <block type="minecraft_drawcol_yellow" id="KJp#zp^#Eqons4H3Qq|2">
+                                <field name="col">#ffff00</field>
+                                <value name="drawcolour">
+                                  <block type="minecraft_drawcol_yellow" id="3_Kwt,4HXwIviIFr(;3Y">
+                                    <field name="col">#ffff00</field>
+                                    <value name="drawcolour">
+                                      <block type="minecraft_drawcol_yellow" id="t%{HO)nM0UsA1.eP^h`o">
+                                        <field name="col">#000000</field>
+                                        <value name="drawcolour">
+                                          <block type="minecraft_drawcol_yellow" id="k;It_40$Z[=lqvyH6N{?">
+                                            <field name="col">#000000</field>
+                                            <value name="drawcolour">
+                                              <block type="minecraft_drawcol_yellow" id="Z;f/Bie4HZs]=^JUx3I:">
+                                                <field name="col">#000000</field>
+                                                <value name="drawcolour">
+                                                  <block type="minecraft_drawcol_yellow" id="Jujy3f%XK6nv%2MFa{R@">
+                                                    <field name="col">#000000</field>
+                                                    <value name="drawcolour">
+                                                      <block type="minecraft_drawcol_yellow" id="*=M._A{Gi;)9@^A0i-Wg">
+                                                        <field name="col">#000000</field>
+                                                        <value name="drawcolour">
+                                                          <block type="minecraft_drawcol_yellow" id="HA4D(=[i!0=ul3#}uDa(">
+                                                            <field name="col">#ffff00</field>
+                                                            <value name="drawcolour">
+                                                              <block type="minecraft_drawcol_yellow" id="uuC2e2-||V-3c=:;4.CP">
+                                                                <field name="col">#ffff00</field>
+                                                                <value name="drawcolour">
+                                                                  <block type="minecraft_drawcol_yellow" id="$!PfIE~!?HHEUuQJVk!/">
+                                                                    <field name="col">#ffff00</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="ADD2">
+                          <block type="minecraft_drawcol_yellow" id="Atno};BFgujvS{n%hO^|">
+                            <field name="col">#ffff00</field>
+                            <value name="drawcolour">
+                              <block type="minecraft_drawcol_yellow" id="x`[biS*r*FnX;r3gI#4}">
+                                <field name="col">#ffff00</field>
+                                <value name="drawcolour">
+                                  <block type="minecraft_drawcol_yellow" id="eEsa5=uh;tb:w@m))5wI">
+                                    <field name="col">#000000</field>
+                                    <value name="drawcolour">
+                                      <block type="minecraft_drawcol_yellow" id="P`6(TzcS.gOqzA_)(*|L">
+                                        <field name="col">#ff0000</field>
+                                        <value name="drawcolour">
+                                          <block type="minecraft_drawcol_yellow" id="l=ji%{S05kXwhQZ_gIBe">
+                                            <field name="col">#ff0000</field>
+                                            <value name="drawcolour">
+                                              <block type="minecraft_drawcol_yellow" id="$kMd$y.1f%5.YPWgd@kz">
+                                                <field name="col">#000000</field>
+                                                <value name="drawcolour">
+                                                  <block type="minecraft_drawcol_yellow" id="/.NZtFoYcYcdyP^6.(Hy">
+                                                    <field name="col">#ff0000</field>
+                                                    <value name="drawcolour">
+                                                      <block type="minecraft_drawcol_yellow" id="[=DANHqYq~G2]IbKPxsd">
+                                                        <field name="col">#ff0000</field>
+                                                        <value name="drawcolour">
+                                                          <block type="minecraft_drawcol_yellow" id="$0OawE#7?KG_REubY)ln">
+                                                            <field name="col">#000000</field>
+                                                            <value name="drawcolour">
+                                                              <block type="minecraft_drawcol_yellow" id="fu4[%.?:_2e}f8ZW!Bva">
+                                                                <field name="col">#ffff00</field>
+                                                                <value name="drawcolour">
+                                                                  <block type="minecraft_drawcol_yellow" id="NXAu?Pgi$7DWEQ!TxphF">
+                                                                    <field name="col">#ffff00</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="ADD3">
+                          <block type="minecraft_drawcol_yellow" id="vYsaeDhEUgFB$2h[#54i">
+                            <field name="col">#ffff00</field>
+                            <value name="drawcolour">
+                              <block type="minecraft_drawcol_yellow" id="qmMkR26.Ik?{CH|U)/Lc">
+                                <field name="col">#ffff00</field>
+                                <value name="drawcolour">
+                                  <block type="minecraft_drawcol_yellow" id="7@q89R%(3nl=p$eC-/}3">
+                                    <field name="col">#000000</field>
+                                    <value name="drawcolour">
+                                      <block type="minecraft_drawcol_yellow" id="0-{)*~(dj!@083OTlyGc">
+                                        <field name="col">#ff0000</field>
+                                        <value name="drawcolour">
+                                          <block type="minecraft_drawcol_yellow" id="H/=Id(fxQCiuZiIzNdU,">
+                                            <field name="col">#ff0000</field>
+                                            <value name="drawcolour">
+                                              <block type="minecraft_drawcol_yellow" id="bHl$;QF.-5hds5|np[[L">
+                                                <field name="col">#000000</field>
+                                                <value name="drawcolour">
+                                                  <block type="minecraft_drawcol_yellow" id="P%00xB9b#Xo+gnCST5`C">
+                                                    <field name="col">#ff0000</field>
+                                                    <value name="drawcolour">
+                                                      <block type="minecraft_drawcol_yellow" id="f|!5hrM~RVf_+M+[)7;J">
+                                                        <field name="col">#ff0000</field>
+                                                        <value name="drawcolour">
+                                                          <block type="minecraft_drawcol_yellow" id="mM2O0)uPd#{5C#X*%*+1">
+                                                            <field name="col">#000000</field>
+                                                            <value name="drawcolour">
+                                                              <block type="minecraft_drawcol_yellow" id="H5tYsDO#DF1m!sxPNRx;">
+                                                                <field name="col">#ffff00</field>
+                                                                <value name="drawcolour">
+                                                                  <block type="minecraft_drawcol_yellow" id="FbU?bw3B8L:6.W,Ub9zw">
+                                                                    <field name="col">#ffff00</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="ADD4">
+                          <block type="minecraft_drawcol_yellow" id="jwb}NoY:RGmDRI@)-4?/">
+                            <field name="col">#ffff00</field>
+                            <value name="drawcolour">
+                              <block type="minecraft_drawcol_yellow" id="4@3?+~UD|^J.2k[qE8.!">
+                                <field name="col">#ffff00</field>
+                                <value name="drawcolour">
+                                  <block type="minecraft_drawcol_yellow" id="5-/}NFq]~4lI*El5hWgj">
+                                    <field name="col">#000000</field>
+                                    <value name="drawcolour">
+                                      <block type="minecraft_drawcol_yellow" id="rcybm{IH6xsjD}phHZot">
+                                        <field name="col">#000000</field>
+                                        <value name="drawcolour">
+                                          <block type="minecraft_drawcol_yellow" id="3xL2moE1zHEq^z9xpK#E">
+                                            <field name="col">#000000</field>
+                                            <value name="drawcolour">
+                                              <block type="minecraft_drawcol_yellow" id="CGOJl2pI]p2g56RQttBz">
+                                                <field name="col">#000000</field>
+                                                <value name="drawcolour">
+                                                  <block type="minecraft_drawcol_yellow" id="P,~!W`{wal.gyDPdk2jD">
+                                                    <field name="col">#000000</field>
+                                                    <value name="drawcolour">
+                                                      <block type="minecraft_drawcol_yellow" id="0#Tx.IKoc+E|Y@x=./_=">
+                                                        <field name="col">#000000</field>
+                                                        <value name="drawcolour">
+                                                          <block type="minecraft_drawcol_yellow" id="]z7FVo:9`*mLWK5aYwO8">
+                                                            <field name="col">#000000</field>
+                                                            <value name="drawcolour">
+                                                              <block type="minecraft_drawcol_yellow" id="@h)iZ4Xc@0EKqI2x%o^/">
+                                                                <field name="col">#ffff00</field>
+                                                                <value name="drawcolour">
+                                                                  <block type="minecraft_drawcol_yellow" id="+,[NxCFD+snJUvACaemB">
+                                                                    <field name="col">#ffff00</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="ADD5">
+                          <block type="minecraft_drawcol_yellow" id="2+-V,/D}+brX,.x:@S2D">
+                            <field name="col">#ffff00</field>
+                            <value name="drawcolour">
+                              <block type="minecraft_drawcol_yellow" id="H;6*Tk`I#Djh9ky}wkBx">
+                                <field name="col">#ffff00</field>
+                                <value name="drawcolour">
+                                  <block type="minecraft_drawcol_yellow" id="9URw5_RSY_A-#FC+z%x(">
+                                    <field name="col">#ffff00</field>
+                                    <value name="drawcolour">
+                                      <block type="minecraft_drawcol_yellow" id="I!?HPW.z|a[l$RaETKsj">
+                                        <field name="col">#000000</field>
+                                        <value name="drawcolour">
+                                          <block type="minecraft_drawcol_yellow" id="sFM|kVc~:om#O~cP3+-H">
+                                            <field name="col">#ff0000</field>
+                                            <value name="drawcolour">
+                                              <block type="minecraft_drawcol_yellow" id="l8/m=({FTy;^V@o)`ps0">
+                                                <field name="col">#ff0000</field>
+                                                <value name="drawcolour">
+                                                  <block type="minecraft_drawcol_yellow" id="wK|_TLj*hwYL*F%U]2$Z">
+                                                    <field name="col">#ff0000</field>
+                                                    <value name="drawcolour">
+                                                      <block type="minecraft_drawcol_yellow" id="9g9sxu[h[/3/nsHuOnMR">
+                                                        <field name="col">#000000</field>
+                                                        <value name="drawcolour">
+                                                          <block type="minecraft_drawcol_yellow" id="_u,3C+p;UO2G+G3qTHc[">
+                                                            <field name="col">#ffff00</field>
+                                                            <value name="drawcolour">
+                                                              <block type="minecraft_drawcol_yellow" id=".z])Y884c:+P86:h1~Ta">
+                                                                <field name="col">#ffff00</field>
+                                                                <value name="drawcolour">
+                                                                  <block type="minecraft_drawcol_yellow" id="J@9xQ%UVcLQ(XvLdrlJa">
+                                                                    <field name="col">#ffff00</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="ADD6">
+                          <block type="minecraft_drawcol_yellow" id="MNZ*vmSU{b-[W0u@nglN">
+                            <field name="col">#000000</field>
+                            <value name="drawcolour">
+                              <block type="minecraft_drawcol_yellow" id="Rgf0[nRUC2cMOYdcQ6!1">
+                                <field name="col">#000000</field>
+                                <value name="drawcolour">
+                                  <block type="minecraft_drawcol_yellow" id="m.c^m(-C859/i|@In2v9">
+                                    <field name="col">#ffff00</field>
+                                    <value name="drawcolour">
+                                      <block type="minecraft_drawcol_yellow" id="Kj$kFeSv~PcmzDr$pD;P">
+                                        <field name="col">#ffff00</field>
+                                        <value name="drawcolour">
+                                          <block type="minecraft_drawcol_yellow" id="]bvO~7VXQ2=*xv=)8L29">
+                                            <field name="col">#000000</field>
+                                            <value name="drawcolour">
+                                              <block type="minecraft_drawcol_yellow" id="?YC[3R1,o/+vJY:}RYld">
+                                                <field name="col">#000000</field>
+                                                <value name="drawcolour">
+                                                  <block type="minecraft_drawcol_yellow" id="4wZ#T^oE2A}[(D8oy3e8">
+                                                    <field name="col">#000000</field>
+                                                    <value name="drawcolour">
+                                                      <block type="minecraft_drawcol_yellow" id="=]pogE$72A`6j5fRUKLU">
+                                                        <field name="col">#ffff00</field>
+                                                        <value name="drawcolour">
+                                                          <block type="minecraft_drawcol_yellow" id="tfT]PY[uxUuh#M5?YC!E">
+                                                            <field name="col">#ffff00</field>
+                                                            <value name="drawcolour">
+                                                              <block type="minecraft_drawcol_yellow" id="o6Kq(H@IgzebG,~@@?2F">
+                                                                <field name="col">#000000</field>
+                                                                <value name="drawcolour">
+                                                                  <block type="minecraft_drawcol_yellow" id="gDXMyIqg3_t`_@HVTD*)">
+                                                                    <field name="col">#000000</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="ADD7">
+                          <block type="minecraft_drawcol_yellow" id="ocewCf:wp%#tTCt=P;rX">
+                            <field name="col">#ffff00</field>
+                            <value name="drawcolour">
+                              <block type="minecraft_drawcol_yellow" id="005=wjzx3(?7BDf!uH{V">
+                                <field name="col">#ffff00</field>
+                                <value name="drawcolour">
+                                  <block type="minecraft_drawcol_yellow" id="03w`OkgXVe4yHOE0US_!">
+                                    <field name="col">#000000</field>
+                                    <value name="drawcolour">
+                                      <block type="minecraft_drawcol_yellow" id="H,?(!y6kT4oMYZkmk#Mp">
+                                        <field name="col">#000000</field>
+                                        <value name="drawcolour">
+                                          <block type="minecraft_drawcol_yellow" id="9-R%d6F)}E{RH|B[^B%b">
+                                            <field name="col">#ffff00</field>
+                                            <value name="drawcolour">
+                                              <block type="minecraft_drawcol_yellow" id="vi]XVqUh5iVOD`c7EPkT">
+                                                <field name="col">#ffff00</field>
+                                                <value name="drawcolour">
+                                                  <block type="minecraft_drawcol_yellow" id="s2R{Y$%CojQsNhYX#XdT">
+                                                    <field name="col">#ffff00</field>
+                                                    <value name="drawcolour">
+                                                      <block type="minecraft_drawcol_yellow" id="9L0+phWd-)h$5Y(T+c`R">
+                                                        <field name="col">#000000</field>
+                                                        <value name="drawcolour">
+                                                          <block type="minecraft_drawcol_yellow" id="mw(v=-J@O^wf94mA.6V,">
+                                                            <field name="col">#000000</field>
+                                                            <value name="drawcolour">
+                                                              <block type="minecraft_drawcol_yellow" id="0z-oiXsTX52hFo0.Qqmc">
+                                                                <field name="col">#ffff00</field>
+                                                                <value name="drawcolour">
+                                                                  <block type="minecraft_drawcol_yellow" id=".,9fs3L+.;XEdGn7PH}:">
+                                                                    <field name="col">#ffff00</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="ADD8">
+                          <block type="minecraft_drawcol_yellow" id="d{3c^zU)$6$8wo_E%]Xw">
+                            <field name="col">#ffff00</field>
+                            <value name="drawcolour">
+                              <block type="minecraft_drawcol_yellow" id="f|Q9rIiD^C*u;Vq5z:er">
+                                <field name="col">#ffff00</field>
+                                <value name="drawcolour">
+                                  <block type="minecraft_drawcol_yellow" id="p*hM~/B`w-!9[s!zQQe7">
+                                    <field name="col">#ffff00</field>
+                                    <value name="drawcolour">
+                                      <block type="minecraft_drawcol_yellow" id="R7XR]Zik)Hrk,m}fH5;/">
+                                        <field name="col">#ffff00</field>
+                                        <value name="drawcolour">
+                                          <block type="minecraft_drawcol_yellow" id="?Eo4ADEFl#j/eISQdbsy">
+                                            <field name="col">#000000</field>
+                                            <value name="drawcolour">
+                                              <block type="minecraft_drawcol_yellow" id="i-|%Avaa0NTHfpYw5$X^">
+                                                <field name="col">#ffff00</field>
+                                                <value name="drawcolour">
+                                                  <block type="minecraft_drawcol_yellow" id="TZ3gD%]zt8g:jNGJK/)E">
+                                                    <field name="col">#000000</field>
+                                                    <value name="drawcolour">
+                                                      <block type="minecraft_drawcol_yellow" id="w!2+32$=)(i2#l[r#?kN">
+                                                        <field name="col">#ffff00</field>
+                                                        <value name="drawcolour">
+                                                          <block type="minecraft_drawcol_yellow" id="1.F6#]28w_i@gz[g(j]#">
+                                                            <field name="col">#ffff00</field>
+                                                            <value name="drawcolour">
+                                                              <block type="minecraft_drawcol_yellow" id="VXR0B0Kw6_ZDG:qZ$P2{">
+                                                                <field name="col">#ffff00</field>
+                                                                <value name="drawcolour">
+                                                                  <block type="minecraft_drawcol_yellow" id=";MfnDa}cI02IB!$?LU2e">
+                                                                    <field name="col">#ffff00</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="ADD9">
+                          <block type="minecraft_drawcol_yellow" id="9Q_LmIU,Sw0K2H2P8Xu-">
+                            <field name="col">#ffff00</field>
+                            <value name="drawcolour">
+                              <block type="minecraft_drawcol_yellow" id=":%.y|vj4_6BCl*-,-d`t">
+                                <field name="col">#ffff00</field>
+                                <value name="drawcolour">
+                                  <block type="minecraft_drawcol_yellow" id="X#jn[8I4b6+p{)^S/EcT">
+                                    <field name="col">#ffff00</field>
+                                    <value name="drawcolour">
+                                      <block type="minecraft_drawcol_yellow" id="YZ(RB|aS,@=,G75#jm%(">
+                                        <field name="col">#ffff00</field>
+                                        <value name="drawcolour">
+                                          <block type="minecraft_drawcol_yellow" id="V8VMAC4%V9nn#=Qy`]~t">
+                                            <field name="col">#ffff00</field>
+                                            <value name="drawcolour">
+                                              <block type="minecraft_drawcol_yellow" id=")-s!Tj`Y{P$hU)v=Te)5">
+                                                <field name="col">#ffffff</field>
+                                                <value name="drawcolour">
+                                                  <block type="minecraft_drawcol_yellow" id="v:EZ@fjvZ)J3Na(qC`!|">
+                                                    <field name="col">#ffff00</field>
+                                                    <value name="drawcolour">
+                                                      <block type="minecraft_drawcol_yellow" id="iu?xj-Gp1xAB*oyH?8#X">
+                                                        <field name="col">#ffff00</field>
+                                                        <value name="drawcolour">
+                                                          <block type="minecraft_drawcol_yellow" id="!Y1Su^4#$,SW+E,h2+}v">
+                                                            <field name="col">#ffff00</field>
+                                                            <value name="drawcolour">
+                                                              <block type="minecraft_drawcol_yellow" id="M=QUXlSRMA4~F=3D0_`n">
+                                                                <field name="col">#ffff00</field>
+                                                                <value name="drawcolour">
+                                                                  <block type="minecraft_drawcol_yellow" id="WV[51P1M:O@JM~{Dw/P6">
+                                                                    <field name="col">#ffff00</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="ADD10">
+                          <block type="minecraft_drawcol_yellow" id="T7=V5w:(cfSuQqEfFhuj">
+                            <field name="col">#ffff00</field>
+                            <value name="drawcolour">
+                              <block type="minecraft_drawcol_yellow" id="k=q|7ZwCl)~k%faOdhfs">
+                                <field name="col">#ffff00</field>
+                                <value name="drawcolour">
+                                  <block type="minecraft_drawcol_yellow" id=";~;IO2swHeDVm9M1*a7I">
+                                    <field name="col">#ffff00</field>
+                                    <value name="drawcolour">
+                                      <block type="minecraft_drawcol_yellow" id="#P)`jv]JGp:0:3)50!mX">
+                                        <field name="col">#ffff00</field>
+                                        <value name="drawcolour">
+                                          <block type="minecraft_drawcol_yellow" id="nX+Kb0GmgD[bz-705~,|">
+                                            <field name="col">#000000</field>
+                                            <value name="drawcolour">
+                                              <block type="minecraft_drawcol_yellow" id="HzmKKX:%P5J*.Iwmo]tQ">
+                                                <field name="col">#ffff00</field>
+                                                <value name="drawcolour">
+                                                  <block type="minecraft_drawcol_yellow" id="xJ^.*R}tc.Gj-|rrGPJ;">
+                                                    <field name="col">#000000</field>
+                                                    <value name="drawcolour">
+                                                      <block type="minecraft_drawcol_yellow" id="JNs~)uEG|]?]~/9Kg7-4">
+                                                        <field name="col">#ffff00</field>
+                                                        <value name="drawcolour">
+                                                          <block type="minecraft_drawcol_yellow" id="GF!H9HfiVnv1pL6G7/Y|">
+                                                            <field name="col">#ffff00</field>
+                                                            <value name="drawcolour">
+                                                              <block type="minecraft_drawcol_yellow" id="cO`Q2[@ZCSsDBRl;v=+|">
+                                                                <field name="col">#ffff00</field>
+                                                                <value name="drawcolour">
+                                                                  <block type="minecraft_drawcol_yellow" id="h,pR1o-z7l/ifC)Ri$df">
+                                                                    <field name="col">#ffff00</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="ADD11">
+                          <block type="minecraft_drawcol_yellow" id="N`CvJL=ZY076jQ[pEh/X">
+                            <field name="col">#ffff00</field>
+                            <value name="drawcolour">
+                              <block type="minecraft_drawcol_yellow" id="F2B;`5DbjDRKZ9HPsn_K">
+                                <field name="col">#ffff00</field>
+                                <value name="drawcolour">
+                                  <block type="minecraft_drawcol_yellow" id="$oKSazzd|h)5E.cq-)+A">
+                                    <field name="col">#000000</field>
+                                    <value name="drawcolour">
+                                      <block type="minecraft_drawcol_yellow" id="YgC%1H1pDI;;T2[EsTwL">
+                                        <field name="col">#000000</field>
+                                        <value name="drawcolour">
+                                          <block type="minecraft_drawcol_yellow" id="55q)%yZXu:rKQ@IR1i_4">
+                                            <field name="col">#ffff00</field>
+                                            <value name="drawcolour">
+                                              <block type="minecraft_drawcol_yellow" id="VO87h@#!I^RlD)uI!L#U">
+                                                <field name="col">#ffff00</field>
+                                                <value name="drawcolour">
+                                                  <block type="minecraft_drawcol_yellow" id="vufp;fe:[zs;nDRUr,91">
+                                                    <field name="col">#ffff00</field>
+                                                    <value name="drawcolour">
+                                                      <block type="minecraft_drawcol_yellow" id="]z0#0UA7T5O]xtC~..iP">
+                                                        <field name="col">#000000</field>
+                                                        <value name="drawcolour">
+                                                          <block type="minecraft_drawcol_yellow" id="w=[iu5n)ut`rXs]]m@_k">
+                                                            <field name="col">#000000</field>
+                                                            <value name="drawcolour">
+                                                              <block type="minecraft_drawcol_yellow" id="slW3:~bo32VE)YqM$w@6">
+                                                                <field name="col">#ffff00</field>
+                                                                <value name="drawcolour">
+                                                                  <block type="minecraft_drawcol_yellow" id="s?8Mk:,y)GD6~Cx$x+e;">
+                                                                    <field name="col">#ffff00</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="ADD12">
+                          <block type="minecraft_drawcol_yellow" id="%9XKUy{IR5T|lRh8(s~W">
+                            <field name="col">#000000</field>
+                            <value name="drawcolour">
+                              <block type="minecraft_drawcol_yellow" id="A_ZP+R4,M*=`;THp$zxg">
+                                <field name="col">#000000</field>
+                                <value name="drawcolour">
+                                  <block type="minecraft_drawcol_yellow" id="sWD%rd}:s42?bpVtIdJ|">
+                                    <field name="col">#ffff00</field>
+                                    <value name="drawcolour">
+                                      <block type="minecraft_drawcol_yellow" id="hrVmucNetAwtOrU1nAmM">
+                                        <field name="col">#ffff00</field>
+                                        <value name="drawcolour">
+                                          <block type="minecraft_drawcol_yellow" id="D=nI%moXq@Vew78a]O@|">
+                                            <field name="col">#ffff00</field>
+                                            <value name="drawcolour">
+                                              <block type="minecraft_drawcol_yellow" id="9uyH|4AKLUm-@F?@=z@@">
+                                                <field name="col">#ffff00</field>
+                                                <value name="drawcolour">
+                                                  <block type="minecraft_drawcol_yellow" id="Gh=ypffTyUGACNmbyUB4">
+                                                    <field name="col">#ffff00</field>
+                                                    <value name="drawcolour">
+                                                      <block type="minecraft_drawcol_yellow" id="ph;]T,8zys8SgT5Og=Up">
+                                                        <field name="col">#ffff00</field>
+                                                        <value name="drawcolour">
+                                                          <block type="minecraft_drawcol_yellow" id="QkyixH6gdb;TpUw}sbI@">
+                                                            <field name="col">#ffff00</field>
+                                                            <value name="drawcolour">
+                                                              <block type="minecraft_drawcol_yellow" id=".SH_o]La5)e:,?O;7cEk">
+                                                                <field name="col">#000000</field>
+                                                                <value name="drawcolour">
+                                                                  <block type="minecraft_drawcol_yellow" id="M@i#5|832/jubi3*#+A)">
+                                                                    <field name="col">#000000</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="blockchoice1">
+                      <block type="minecraft_materialbockOnlyOne" id="wM!CeBz|qk.Id,bL8Kf*">
+                        <field name="NAME">b.gold_block</field>
+                      </block>
+                    </value>
+                    <value name="blockchoice3">
+                      <block type="minecraft_materialbockOnlyOne" id="x2V2^!H+RWHkeoY@wW8z">
+                        <field name="NAME">b.black_wool</field>
+                      </block>
+                    </value>
+                    <value name="blockchoice4">
+                      <block type="minecraft_materialbockOnlyOne" id="+wQ}9D51w7;%YY6K0Q9^">
+                        <field name="NAME">b.diamond_ore</field>
+                      </block>
+                    </value>
+                    <value name="blockchoice5">
+                      <block type="minecraft_materialbockOnlyOne" id="QajQC,$5ftA6fo$MFXH5">
+                        <field name="NAME">b.air</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="minecraft_move" id="VV0L!nAp@6!WgB_Ym2B=">
+                        <field name="direction">UP</field>
+                        <value name="times">
+                          <block type="math_number" id="~5b/jyg{x$9gijng$II-">
+                            <field name="NUM">1</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>

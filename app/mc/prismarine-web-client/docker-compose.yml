@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  minecraft-prismarine:
+    build:
+      context: ../
+      dockerfile: prismarine-web-client/Dockerfile
+    container_name: minecraft-prismarine-bundle
+    ports:
+      - "8080:80"      # Mapped to 8080 on the host to avoid port 80 conflicts, change if needed
+      - "25565:25565"  # Minecraft server port
+    restart: always

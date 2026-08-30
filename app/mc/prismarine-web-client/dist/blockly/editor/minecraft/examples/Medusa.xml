@@ -1,0 +1,131 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="procedures_defnoreturn" id="w()l-!Hg5I^[G:lvu@K;" x="0" y="0">
+    <field name="NAME">medusa</field>
+    <comment pinned="false" h="80" w="160">Descrivi questa funzione...</comment>
+    <statement name="STACK">
+      <block type="controls_repeat_ext" id="Y2+}XSM1;k$.s!^S51t/">
+        <value name="TIMES">
+          <shadow type="math_number" id=";wTQCdtDAu[|mKOqv##*">
+            <field name="NUM">8</field>
+          </shadow>
+        </value>
+        <statement name="DO">
+          <block type="controls_for" id="%.j98xFGtEA;eMckZ2k(">
+            <field name="VAR">i</field>
+            <value name="FROM">
+              <shadow type="math_number" id="w8PO?[c+C}x5AU1Z#vT^">
+                <field name="NUM">0</field>
+              </shadow>
+            </value>
+            <value name="TO">
+              <shadow type="math_number" id="-t[C_^2)FUXA3,vV%,wA">
+                <field name="NUM">180</field>
+              </shadow>
+            </value>
+            <value name="BY">
+              <shadow type="math_number" id="?dioM%H2ud{LisqTR~*8">
+                <field name="NUM">1</field>
+              </shadow>
+            </value>
+            <statement name="DO">
+              <block type="minecraft_set_elevation" id="hlI:i(Z4_3+{5tnmdEU^">
+                <value name="angle">
+                  <block type="variables_get" id="s)_%nUq%W#M%.Qq2p4sF">
+                    <field name="VAR">i</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="minecraft_polygon" id="=i_V=#n!Jundefined@rR=54T">
+                    <field name="fill">false</field>
+                    <value name="nr_sides">
+                      <block type="math_number" id="oA@eEpt@kWiuXJepL$JZ">
+                        <field name="NUM">7</field>
+                      </block>
+                    </value>
+                    <value name="sideLength">
+                      <block type="math_arithmetic" id="mhzus=+dBf;Jn_Z~k(=a">
+                        <field name="OP">MINUS</field>
+                        <value name="A">
+                          <shadow xmlns="" type="math_number" id="1??7`yp^LJRJ?Bpw/6$=">
+                            <field xmlns="" name="NUM">1</field>
+                          </shadow>
+                          <block type="math_number" id="?m])%2C9_guSU:5+u7?*">
+                            <field name="NUM">5</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <shadow xmlns="" type="math_number" id="bDx)~~E$O=zPX$kOY`qy">
+                            <field xmlns="" name="NUM">1</field>
+                          </shadow>
+                          <block type="math_arithmetic" id="m;6I#+L(U[/}|K?F^j!J">
+                            <field name="OP">DIVIDE</field>
+                            <value name="A">
+                              <shadow xmlns="" type="math_number" id="1??7`yp^LJRJ?Bpw/6$=">
+                                <field xmlns="" name="NUM">1</field>
+                              </shadow>
+                              <block type="variables_get" id="pWzX~,}*b.KeqpifrR97">
+                                <field name="VAR">i</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <shadow type="math_number" id="u7I]STag%oWn%4/pNAlj">
+                                <field name="NUM">45</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="NAME">
+                      <block type="minecraft_materialbockOnlyOne" id="5KUQ+l`1(b)7i?IQ;oW|">
+                        <field name="NAME">b.glass</field>
+                        <value name="singleblock">
+                          <block type="minecraft_materialbockOnlyOne" id="JP.HbB6YTjy#kKNxJXYM">
+                            <field name="NAME">b.slime_block</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="minecraft_move" id="TBau_F2E?.%5Cbw;X/m^">
+                        <field name="direction">UP</field>
+                        <value name="times">
+                          <block type="math_number" id="FIO5J3R:j1nm/dgfi3^p">
+                            <field name="NUM">0.6</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <next>
+              <block type="minecraft_gotomark" id="bppm}%PX4e{K{m[AwbMc">
+                <field name="origin">0</field>
+                <next>
+                  <block type="minecraft_set_elevation" id="g}SmR^kkE)5EdFhD+HbV">
+                    <value name="angle">
+                      <block type="math_number" id="Ar+9!AztB;p,kj`cj?b/">
+                        <field name="NUM">0</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="minecraft_rotate" id="A2?Ib5MW8q_Gvc;/Q(VW">
+                        <value name="angle">
+                          <block type="math_number" id="XS,BZuBHD+Sz#te5$JOJ">
+                            <field name="NUM">45</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+</xml>

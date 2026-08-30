@@ -1,0 +1,143 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="procedures_defnoreturn" id="OCcD_k7yO;C!rXHtq,Hb" x="0" y="0">
+    <field name="NAME">orientation</field>
+    <comment pinned="false" h="80" w="160">Descrivi questa funzione...</comment>
+    <statement name="STACK">
+      <block type="controls_for" id="TqQ];^*@tsh=Vr}N`((J">
+        <field name="VAR">j</field>
+        <value name="FROM">
+          <shadow type="math_number" id="kNk~t=3+dCckGIG_rI=x">
+            <field name="NUM">0</field>
+          </shadow>
+        </value>
+        <value name="TO">
+          <shadow type="math_number" id="[od|~lrZ|V61t`!3grd4">
+            <field name="NUM">359</field>
+          </shadow>
+        </value>
+        <value name="BY">
+          <shadow type="math_number" id="5R}V*T*%E#WC11udN16R">
+            <field name="NUM">90</field>
+          </shadow>
+        </value>
+        <statement name="DO">
+          <block type="minecraft_move" id="PuH;:2z4N(kj757paN:`">
+            <field name="direction">FW</field>
+            <value name="times">
+              <block type="math_number" id="z#Q?*%G({T.U;!Z2grIM">
+                <field name="NUM">10</field>
+              </block>
+            </value>
+            <next>
+              <block type="minecraft_line" id="j?!g}#{cW$d+M2cO;aeK">
+                <value name="length">
+                  <block type="math_number" id="GP[5e~]8K4(I_fOk6{A;">
+                    <field name="NUM">20</field>
+                  </block>
+                </value>
+                <value name="NAME">
+                  <block type="minecraft_materialbockOnlyOne" id="KHIEQZ[$~#m3b=/$DTS~">
+                    <field name="NAME">b.diamond_block</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="minecraft_move" id="CV.)DKkRc}FLnfJE$fWB">
+                    <field name="direction">FW</field>
+                    <value name="times">
+                      <block type="math_number" id="c`!2J($`J]Np#]Aw5RXz">
+                        <field name="NUM">10</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="minecraft_rotate" id="TOPGvz|f|T+rT1wklzH#">
+                        <value name="angle">
+                          <block type="math_number" id="b8}hJ_pEmN:/RbNQl]X2">
+                            <field name="NUM">30</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="minecraft_polygon" id="WhR|`(C]aMsX-Uth.?,J">
+                            <field name="fill">true</field>
+                            <value name="nr_sides">
+                              <block type="math_number" id="`]|AlX?CfHQqYB@5ceou">
+                                <field name="NUM">3</field>
+                              </block>
+                            </value>
+                            <value name="sideLength">
+                              <block type="math_number" id="rO9j=L[jvOq]|x$$w.Pd">
+                                <field name="NUM">3</field>
+                              </block>
+                            </value>
+                            <value name="NAME">
+                              <block type="minecraft_materialbockOnlyOne" id="c}iq]eYobFoQ|wUEByOx">
+                                <field name="NAME">b.diamond_block</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="minecraft_rotate" id="V_:Y.B~2RV.eJwTZDVfc">
+                                <value name="angle">
+                                  <block type="math_number" id="[ryos3~)ynr=IVFPDM`(">
+                                    <field name="NUM">-30</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="minecraft_move" id="#)Wyq3#_F6?bDKgKt8Z1">
+                                    <field name="direction">FW</field>
+                                    <value name="times">
+                                      <block type="math_number" id="P73xgnd8GN?lOnBu8tT5">
+                                        <field name="NUM">8</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="minecraft_text" id="1z}ZX{tx;oU$)0^j}IaL">
+                                        <field name="fontName">Arial</field>
+                                        <field name="fontStyle">0</field>
+                                        <value name="inputText">
+                                          <block type="variables_get" id="koG8AWLoJMzJw*}*6.?6">
+                                            <field name="VAR">j</field>
+                                          </block>
+                                        </value>
+                                        <value name="fontPoints">
+                                          <block type="math_number" id="HsHC~_:[M0Dh]x#HB,a{">
+                                            <field name="NUM">12</field>
+                                          </block>
+                                        </value>
+                                        <value name="NAME">
+                                          <block type="minecraft_materialbockOnlyOne" id=".ny#;7*IrP`*k%9|KZ.w">
+                                            <field name="NAME">b.diamond_block</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="minecraft_gotomark" id="LXK?n3Vz@|?;Q^I.OcY*">
+                                            <field name="origin">0</field>
+                                            <next>
+                                              <block type="minecraft_rotate" id="$5,x^7{|}kzG7Y1/D2iE">
+                                                <value name="angle">
+                                                  <block type="math_number" id="x4*-.M|zZNTxRggEy7*i">
+                                                    <field name="NUM">-90</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+</xml>
