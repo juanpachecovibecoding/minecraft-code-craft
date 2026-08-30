@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Supabase Client Integration for Prismarine + VisualModder
  */
 (function (window) {

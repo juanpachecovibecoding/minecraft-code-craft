@@ -1,4 +1,4 @@
-﻿/**
+/**
  * VisualModder Client Engine in Pure JavaScript
  * Replaces the Java VisualModder plugin to run natively in Singleplayer & Web
  */

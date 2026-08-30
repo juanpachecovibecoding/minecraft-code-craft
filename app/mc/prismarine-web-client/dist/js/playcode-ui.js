@@ -1,4 +1,4 @@
-﻿/**
+/**
  * PlayCode Hub UI: Auth Modal, Blockly Launcher & Projects Manager
  */
 (function () {
